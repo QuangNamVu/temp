@@ -1,0 +1,2 @@
+Mean Test Accuracy: 0.894702, Mean Test Loss: 0.760909
+
