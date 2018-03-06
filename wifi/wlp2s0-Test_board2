@@ -1,0 +1,7 @@
+Description='Automatically generated profile by wifi-menu'
+Interface=wlp2s0
+Connection=wireless
+Security=wpa
+ESSID=Test_board2
+IP=dhcp
+Key=toiyeu8438626
