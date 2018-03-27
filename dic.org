@@ -1,60 +1,66 @@
 * x
-fountain
-mutant
-light
+  devout
+  trend
+  insecure
+  fountain
+  mutant
+  light
   3d viewer in linux
   cay co ngot
-collaborator
+  collaborator
   tremor
   censure
-spree
+  spree
   snip 
   snoutbook
   restrain
   gras
   foie
- cage
-insemination
-pull lever toilet
-dove
-condominium
-sự nhiễm điện electrization
-shuffling
-interrupt
-corrupt
-replication
-dodge
-sleeker
-drill
-fetch
-neck
-hannibal
-descendant
-rate
-explicit
-hardcore
-roam
-loot
-banner
-contact
-certification
-roam
+  cage
+  insemination
+  pull lever toilet
+  dove
+  condominium
+  sự nhiễm điện electrization
+  shuffling
+  interrupt
+  corrupt
+  replication
+  dodge
+  sleeker
+  drill
+  fetch
+  neck
+  hannibal
+  descendant
+  rate
+  explicit
+  hardcore
+  roam
+  loot
+  banner
+  contact
+  certification
+  roam
+regular
 * urban
-| mb    | my bad                      |
-| macro | phoi hop dong doi           |
-| XD    | laughing face               |
-| smurf | play low account            |
-| idk   | i dont know                 |
-| tk    | thank you                   |
-| debut | first performance           |
-| nvm   | never mind                  |
-| ggwp  | good game well play         |
-| lmfao | Laughing my fucking ass off |
+  | mb       | my bad                      |
+  | macro    | phoi hop dong doi           |
+  | XD       | laughing face               |
+  | smurf    | play low account            |
+  | idk      | i dont know                 |
+  | tk       | thank you                   |
+  | debut    | first performance           |
+  | nvm      | never mind                  |
+  | ggwp     | good game well play         |
+  | lmfao    | Laughing my fucking ass off |
+  | town-rat | person bumming              |
 * Thanh ngu
-http://tienganh.elight.edu.vn/105-thanh-ngu-tieng-anh-thong-dung/
-| bring on the table        |             |
-| like father like son      |             |
-| go big or go home         |             |
-| Get an installment buying | mua trả góp |
+  http://tienganh.elight.edu.vn/105-thanh-ngu-tieng-anh-thong-dung/
+  | bring on the table        |                   |
+  | like father like son      |                   |
+  | go big or go home         |                   |
+  | Get an installment buying | mua trả góp       |
+  | rolling-release           | cập nhật liên tục |
 
- Break the news: Thông báo
+  Break the news: Thông báo
