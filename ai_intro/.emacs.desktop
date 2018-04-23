@@ -1,0 +1,571 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Apr 23 14:46:23 2018
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23261 36687 781603 469000) (desktop . "208") "coc@free" nil nil ((((font-backend xft x) (font . "-ADBO-Source Code Pro-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1") (font-parameter . "Source Code Pro") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#b2b2b2") (background-color . "#292b2e") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "DarkGoldenrod2") (environment) (eyebrowse-last-slot . 1) (eyebrowse-current-slot . 1) (eyebrowse-window-configs (1 (((min-height . 8) (min-width . 10) (min-height-ignore . 6) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 136) (min-pixel-width . 80) (min-pixel-height-ignore . 102) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 34) (min-pixel-width-safe . 16)) vc (pixel-width . 1342) (pixel-height . 702) (total-width . 168) (total-height . 41) (normal-height . 1.0) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 1342) (pixel-height . 410) (total-width . 168) (total-height . 24) (normal-height . 0.588548601864181) (normal-width . 1.0) (buffer "rule.py" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1375) (start . 1133))) (leaf (last . t) (pixel-width . 1342) (pixel-height . 292) (total-width . 168) (total-height . 17) (normal-height . 0.41145139813581894) (normal-width . 1.0) (buffer "*compilation*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 244) (start . 1)))) "")) (powerline-cache) (persp) (persp-buffer-predicate-old . spacemacs/useful-buffer-p) (persp-buffer-predicate-generated . "Unprintable entity") (sticky) (frameset--id . "FAF8-326F-B846-BDFD") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (visibility . t) (height . 42) (width . 165) (left . 9) (top . 34)) ((min-height . 8) (min-width . 10) (min-height-ignore . 6) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 136) (min-pixel-width . 80) (min-pixel-height-ignore . 102) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 34) (min-pixel-width-safe . 16)) vc (pixel-width . 1342) (pixel-height . 702) (total-width . 168) (total-height . 41) (normal-height . 1.0) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 1342) (pixel-height . 410) (total-width . 168) (total-height . 24) (normal-height . 0.588548601864181) (normal-width . 1.0) (buffer "rule.py" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1375) (start . 1133))) (leaf (last . t) (pixel-width . 1342) (pixel-height . 292) (total-width . 168) (total-height . 17) (normal-height . 0.41145139813581894) (normal-width . 1.0) (buffer "*compilation*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 244) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("print" "sqli" "usb" "matrix" "3" "GE" "SPC" "tar" "7z" "neotree" "\\.emacs" "desktop" "build" "lib" "path" "dmen"))
+(setq register-alist (list '(113) (list 95 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,56 (get-buffer ,"rule.py")))) mk)) '(48 . "        if self.dimension is 'y'\n            if x < 3:\n                return False\n            if self.matrix[y][x-1] == 1 and self.matrix[y][x-2] == 1:\n                return True\n")))
+(setq file-name-history '("~/ai_intro/src/rule.py" "~/ai_intro/src/generate.py" "~/ai_intro/src/main.py" "~/ai_intro/src/load.py" "~/ai_intro/src/display.py" "~/ai_intro/src/add_move.py" "~/ai_intro/src/add_child.py" "~/ai_intro/src/tree.py" "~/script/python/class.py" "~/asm_template/main" "~/git_temp/songs.org" "~/doc_command/sqlite3.org" "~/sqlite3/create_table.cpp" "~/sqlite3/create_table" "~/sqlite3/Makefile" "~/doc_command/linux.org" "~/asm_template/login.cpp" "~/asm_template/loadfile.h" "~/asm_template/main.cpp" "~/asm_template/login.c" "~/asm_template/Makefile" "~/asm_template/main.c" "~/Templates/mf_tut/Makefile" "~/Templates/mf_tut/hellomake" "~/Templates/mf_tut/hellomake.h" "~/Templates/mf_tut/hellofunc.c" "~/asm_template/hellomake.cpp" "~/asm_template/hellomake.h" "~/asm_template/hellofunc.cpp" "~/note/lol.org" "~/ai_intro/src/read.py" "~/hk172/cnpmnc/note.org" "~/ai_intro/data/input.txt" "~/ai_intro/main.py" "~/ai_intro/old/checkers_2017.py" "~/ai_intro/old/main.py" "~/Templates/mf_tut/hellomake.c" "~/Templates/mf_tut/hellomake.o" "~/asm_template/foo1.cpp" "~/asm_template/include/account.h" "~/doc_command/emacs/spacemacs.org" "~/asm_template/.dir-locales.el" "~/asm_template/src/main.cpp" "~/script/version/opencv.cc" "~/script/version/opencv.py" "~/script/version/Makefile" "~/doc_command/version.org" "~/.config/i3/config" "~/doc_command/ranger/command.txt" "~/plan/todo.org" "~/plan/todo.org.1" "~/learning/trick.org" "~/.config/polybar/config" "~/.config/installed_package/Packages" "~/script/c/template.cc" "~/.emacs.d/private/snippets/cc-mode/for" "~/.emacs.d/private/snippets/c++-mode/fori" "~/.emacs.d/.cache/.emacs.desktop" "~/.config/polybar/theme/1/config" "~/.config/i3status/config" "~/.config/polybar/theme/2/config" "~/.config/polybar/launch.sh" "~/.zprofile" "~/.i3blocks.conf" "~/.config/i3blocks/i3blocks.conf" "/D/parallel_proccessing/lab/7/note.org" "/D/parallel_proccessing/lab/7/input_dir/sample.txt" "/D/parallel_proccessing/lab/6/input_dir/milano_temps.csv" "/D/parallel_proccessing/lab/7/max_temp.java" "/D/parallel_proccessing/lab/6/MOM.java" "~/ttcnpm-172-36/.gitlab-ci.yml" "~/GetCoordinatesGeocode/app/src/main/java/dev/edmt/getcoordinatesgeocode/MainActivity.java" "~/GetCoordinatesGeocode/app/src/main/java/dev/edmt/getcoordinatesgeocode/HttpDataHandler.java" "/D/parallel_proccessing/asm/note" "~/Templates/convert/Makefile" "/D/parallel_proccessing/asm/tri_repo/sequence/BinaryFilesToHadoopSequenceFile.java" "~/script/c/max_heap_display.c" "~/script/c/Makefile" "~/datamining/note.org" "~/book/note.org" "~/ai/installed/install_pip.list" "~/ai/doc/algorithm.org" "~/doc_command/git.org" "~/script/java/j.java" "~/Templates/ipython/Untitled.ipynb" "~/latex/Templates/cv.tex" "~/latex/build/cv.tex" "~/plan/buy.org" "~/Templates/note.org" "~/ttcnpm-172-36/job_market/build.gradle" "~/Templates/gitlab-ci-android/app/build.gradle" "~/Templates/gitlab-ci-android/.gitlab-ci.yml" "~/ai/note.org" "~/doc_command/spacemasc.org" "~/doc_command/tensorflow.org" "~/english/toeic/100-bai-test-luyen-thi-toeic-co-dap-an.pdf" "~/english/formula/tenes.jpg" "~/git_temp/dic.org" "~/doc_command/vim.org" "/D/ai/yolo3/darknet/cfg/voc.data" "/D/ai/yolo3/darknet/data/voc.names" "~/latex/build/cv.aux" "~/parallel_proccessing/lab/4/Makefile" "/D/ai/yolo2/Vehicle-Detection/YOLO/voc.data" "~/.aliases" "~/ai/prj/Vehicle-Detection/YOLO/voc.data" "~/ai/prj/Vehicle-Detection/YOLO/voc.names" "~/Templates/Md5.java" "~/parallel_proccessing/asm/tri_repo/sequence/ImageDuplicatesRemover.java" "~/ai/prj/Vehicle-Detection/SSD/MobileNet/MobileNetSSD_deploy.prototxt" "~/ai/prj/Vehicle-Detection/README.md" "~/Templates/x/HelloWorld.java" "~/parallel_proccessing/asm/coc_repo/Makefile" "~/parallel_proccessing/asm/coc_repo/src/md5.java" "~/parallel_proccessing/asm/coc_repo/md5.java" "~/vng/cv/cv2.tex" "~/vng/cv/cv.tex" "~/hk172/tthcm/presentation/trong_sach.pdf" "~/eclipse-workspace/parrallel_asm/src/md5.java" "~/parallel_proccessing/lab/6/MOM.java" "~/map/xe50.txt" "~/parallel_proccessing/asm/tri_repo/sequence/run.py" "~/Documents/tex.txt" "~/Dropbox/ai/svhn/train.py" "~/Dropbox/ai/svhn/load_mat.py" "~/Dropbox/ai/svhn/test.py" "~/latex/Assignment_Submission_Template/template.tex" "~/latex/Assignment_Submission_Template/template.aux" "~/latex/temp.tex" "~/parallel_proccessing/asm/src/Makefile" "~/parallel_proccessing/asm/src/HASH_IMG.java" "~/parallel_proccessing/lab/4/mat_mul.c" "~/parallel_proccessing/lab/6/note.org" "~/parallel_proccessing/lab/6/Lab6-Hadoop/src/TopN.java" "~/parallel_proccessing/lab/6/Lab6-Hadoop/TTSS/pg201.txt" "~/parallel_proccessing/lab/6/Lab6-Hadoop/TTSS/forum_users.tsv" "~/parallel_proccessing/lab/4/ex1.c" "~/parallel_proccessing/lab/4/matrix.c" "~/.config/.vimrc" "~/parallel_proccessing/lab/4/ex2.c" "~/parallel_proccessing/lab/4/matrix.cc" "~/.vimrc" "~/parallel_proccessing/mpi/Makefile" "~/html2text/output/1.md" "~/parallel_proccessing/lab/4/mpi_prime.c" "~/.config/.Xmodmap" "~/Dropbox/ai/svhn/cnn.ipynb" "~/ai/mnist/mnist_with_summaries.py" "~/Templates/temp.txt" "~/ai/mnist/mnist.py" "~/ai/mnist/cnn_mnist.py" "~/Templates/latex.tex" "~/ttcnpm-172-36/git_intro/git_enhance.org" "~/parallel_proccessing/lab/6/mean_of_max.java" "~/.zshrc" "~/aliases/hadoop29.aliases" "~/parallel_proccessing/lab/6/Lab6-Hadoop/TTSS/milano_temps.csv" "~/hd_tut/input_dir/sample.txt" "~/parallel_proccessing/lab/6/Lab6-Hadoop/readme.txt" "~/hd_tut/ProcessUnits.java" "~/ttcnpm-172-36/note.org" "~/parallel_proccessing/lab/4/note.txt" "~/Dropbox/ai/cnn/train.py" "~/ai/cnn/sign.py" "~/git_temp/pass.org" "~/doc_command/window_command.org" "/etc/fstab" "/mnt/ai/assignment/cnn/cnn.ipynb" "~/ai/cnn/sign.ipynb" "~/plan/install.org" "~/script/c/prim.c" "~/ttcnpm-172-36/feature_list/nguoi_tim_viec.org" "~/stock/data/AAPL.csv" "~/stock/pandas_intro.py" "~/.config/termite/config" "~/book/linux/bash.org" "~/ttcnpm-172-36/week7/list_chuc_nang/nguoi_tim_viec.org" "~/doc_command/window.org" "~/Android/Sdk/platform-tools/adb" "~/Templates/config.properties" "~/plan/Disassemble.org" "~/git_temp/link.org" "~/temp/temp_file.org" "~/ttcnpm-172-36/doc/intro_git.org" "~/ttcnpm-172-36/final/doc/meetingminutes/UC/AD.vsdx" "~/.config/i3/auto_xmodmap.sh" "~/.emacs.d/private/snippets/c-mode/stdio" "~/script/c/multi_thread.c" "~/book/chinese/TuHocHanNguCoBan.prc" "~/book/note" "~/parallel_proccessing/mpi/ex3.cpp" "~/ttcnpm-172-36/report/Weekly-5.docx" "~/.config/install_pacman.list" "~/script/c/hello.c" "~/parallel_proccessing/mpi/hello.c" "~/.spacemacs" "~/plan/conclusion" "~/plan/daily.org" "~/temp/.bash_profile" "~/1512107.py" "~/.emacs.d/private/snippets/c++-mode/io" "~/.emacs.d/private/snippets/c++-mode/std" "~/.emacs.d/private/snippets/c++-mode/acm" "~/script/c/intro.c" "/etc/X11/xorg.conf.d/00-keyboard.conf" "~/qtkdks/note.org" "~/parallel_proccessing/mpi/blocking.c" "~/parallel_proccessing/mpi/ex2.c" "~/.bash_profile" "~/.bashrc" "/etc/bash.bashrc" "~/parallel_proccessing/mpi/note.org" "~/doc_command/emacs/shell.txt" "~/parallel_proccessing/mpi/array.c" "~/script/c/ex1_mpi.c" "~/script/c/ex1.cpp" "/mnt/video/x/cute/note.org" "~/parallel_proccessing/mpi/muli.c" "~/parallel_proccessing/mpi/ex4.c" "~/.emacs.d/private/snippets/cc-mode/printf" "~/parallel_proccessing/mpi/mul.c" "~/.emacs.d/private/snippets/c-mode/assert" "~/.emacs.d/private/snippets/README.md" "~/.emacs.d/private/snippets/c-lang-common/fopen" "~/parallel_proccessing/mpi/cal_pi.cpp" "~/parallel_proccessing/mpi/ex3.c" "~/parallel_proccessing/lab/4/reduce_avg.c" "~/parallel_proccessing/lab/4/time.c" "~/parallel_proccessing/lab/4/note" "~/parallel_proccessing/mpi/prim.c" "~/mpiBench/mpiBench.c" "~/parallel_proccessing/lab/4/sum.c" "~/parallel_proccessing/lab/4/mpi_hello.c" "~/parallel_proccessing/lab/4/mpi_hello" "~/parallel_proccessing/lab/4/mpi.c" "~/error" "~/doc_command/wifi" "~/.ssh/config" "~/doc_command/linux" "~/script/c/ex1_mpi.cc" "~/script/c/time_cal.sh" "~/.emacs.d/private/snippets/c-mode/printfs" "~/.emacs.d/private/snippets/c-mode/printf" "~/.emacs.d/snippets/c-mode/malloc" "~/.emacs.d/layers/+completion/auto-completion/README.org" "/tmp/yasnippet/README.mdown" "~/script/bash/searchfile.sh" "~/script/keystrings" "~/script/convert/html2md.sh" "~/html2text/output/111.md" "~/html2text/output.md" "~/html2text/README.md" "~/doc_command/firefox.org" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/src/config.zsh" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" "~/doc_command/zsh.org" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/README.md" "~/tmp/input_dir/sample.txt" "~/doc_command/hadoop.org" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/DESCRIPTION" "~/parallel_proccessing/asm/note" "/usr/share/WyabdcRealPeopleTTS/README" "~/plan/good_thing.org" "~/book/linux/temp_note" "~/.xinitrc" "~/parallel_proccessing/asm/tempe.txt" "~/hd_tut/units/ProcessUnit.java" "~/hd_tut/wordcount/WordCount.java" "~/asliases/hadoop-2.9.0.aslias" "~/hadoo-2.9.0/libexec/hadoop-config.sh" "/etc/hadoop/core-site.xml" "~/hd_tut/wordcount/ReduceClass.java" "/sudo:root@localhost:/etc/conf.d/hadoop" "/etc/hadoop/hadoop-env.sh" "/etc/profile.d/hadoop.sh" "~/hadoop-2.9.0/etc/hadoop/hadoop-env.sh" "~/hadoop-2.9.0/etc/hadoop/yarn-site.xml" "~/hadoop-2.9.0/etc/hadoop/mapred-site.xml" "~/hadoop-2.9.0/etc/hadoop/hdfs-site.xml" "~/Downloads/raw.c" "~/hadoop-2.9.0/etc/hadoop/core-site.xml" "~/hadoop-2.9.0/etc/hadoop/mapred-site.xml.template" "~/script/bash/game/thukho.sh" "~/script/bash/game/colormouse.sh" "~/script/bash/game/autoclick" "/mnt/video/x/note.org" "~/doc_command/pacman_install.sh" "~/.config/i3/currentpwd.sh" "~/.emacs.d/layers/+tools/shell/README.org" "/etc/pacman.d/mirrorlist" "~/.bash_aliases" "~/.alias" "~/.emacs.d/init.el" "~/.config/.bashrc" "~/hadoop-2.9.0/README.txt" "~/hadoop-2.7.5/etc/hadoop/mapred-site.xml" "~/hadoop-2.7.5/etc/hadoop/core-site.xml" "~/hadoop-2.7.5/etc/hadoop/hdfs-site.xml" "~/doc_command/bash.org" "~/doc_command/install.sh.gz" "~/ttcnpm-172-36/ui/profile.org" "~/book/linux/bash_tex.md" "~/git_temp/git_spacemacs.org" "~/git_temp/abc.org" "~/git_temp/coc_doc.org" "~/note/link.org" "~/.bash_history" "~/.ssh/id_rsa.pub" "~/parallel_proccessing/intro/ParallelProcessing_1_Intro.ppt" "~/hadoop-2.7.5/etc/hadoop/capacity-scheduler.xml" "~/hadoop-2.7.5/etc/hadoop/hadoop-env.sh" "~/hadoop-2.7.5/etc/hadoop/yarn-site.xml" "~/hadoop-2.7.5/etc/hadoop/yarn-env.sh" "~/hadoop-2.7.5/etc/hadoop/mapred-site.xml.template" "~/hadoop-2.7.5/etc/hadoop/mapred-env.sh" "~/hadoop-2.7.5/README.txt" "~/note/pass" "~/.Xmodmap" "~/.emacs.d/layers/+source-control/git/README.org" "~/plan/TODO.org" "~/ttcnpm-172-36/doc/git_enhance.org" "~/note/wlp2s0-Antivirut" "/etc/hadoop/hdfs-site.xml" "~/plan/cš¢äm_giác.txt" "~/e0a1d6ab2682d2c47746950b84c0b6ee/markdown-sample.md" "~/book/linux/bash_shell_text.org" "~/book/linux/(In a Nutshell) Cameron Newham-Learning the bash Shell  Unix Shell Programming-O'Reilly Media (2005).pdf" "~/old.bashrc" "~/tor/install.org" "~/.config/fish/config.fish" "~/game.Xmodmap" "~/hk172/lichhoc.png" "~/.emacs.d/doc/DOCUMENTATION.org"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/src/rule.py"
+  "rule.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  1375
+  '(1375 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (764 540 1131 1049 1433 1403 803 1275 270 765 419 339 599 1 743 657))))
+
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/src/generate.py"
+  "generate.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  164
+  '(164 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (164 99 72 52 19))))
+
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/src/main.py"
+  "main.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  332
+  '(332 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (134 385 348 383 220 135 332 376 370 135 333 364 364 66 52 158))))
+
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/src/add_move.py"
+  "add_move.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (1 382 383 352 353 188 250 97 333 73 168 24 420 407 576 543))))
+
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/src/load.py"
+  "load.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  293
+  '(293 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (624 401 592 593 20 489 293 351 321 302 540 678 315 294 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/src/display.py"
+  "display.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  423
+  '(423 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (423 20 447 448 52 515 424 509 449 44 420 39 424 424 424 424))))
+
+(desktop-create-buffer 208
+  "/home/coc/script/python/class.py"
+  "class.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  483
+  '(483 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (483 191 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/asm_template/main"
+  "main"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  729
+  '(729 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (729 25 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/.emacs.d/.cache/recentf"
+  "recentf"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  71
+  '(57 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . utf-8-emacs-unix) (overwrite-mode))
+  '((mark-ring (57 57 12505 57 12339))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  113
+  '(113 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (indent-tabs-mode . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (113 121 156 145 6 163 223 52 158 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/git_temp/songs.org"
+  "songs.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode evil-org-mode company-mode)
+  8884
+  '(8884 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (8776 8731 8681 3524 3479 3433 1 35891 35846 35820 35968 35923 35922 35896 3428))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/create_table.cpp"
+  "create_table.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  4
+  '(4 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (4 565 60 1 691 737 1204))))
+
+(desktop-create-buffer 208
+  "/home/coc/doc_command/sqlite3.org"
+  "sqlite3.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode evil-org-mode company-mode)
+  112
+  '(112 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (112 60 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/create_table"
+  "create_table"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/select.cpp"
+  "select.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  1080
+  '(1080 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1080 1081 956 957 1095 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/insert_table.cpp"
+  "insert_table.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  4
+  '(4 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (4 658 1123 655 1 1213 1422))))
+
+(desktop-create-buffer 208
+  "/home/coc/doc_command/linux.org"
+  "linux.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode evil-org-mode company-mode)
+  3
+  '(3 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (3 947 945 2424 2622 1253 6787 5419 6809 6794 5838 5774 1786 1613 2922 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/asm_template/data/account.csv"
+  "account.csv"
+  'csv-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/asm_template/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  171
+  '(171 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (171 210 190 38 75 184 202 202 21 23 1 235 219 219 233 174))))
+
+(desktop-create-buffer 208
+  "/home/coc/asm_template/login.cpp"
+  "login.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  5
+  '(5 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (5 28 1 41 23 69 68 24 19 101 112 110 99))))
+
+(desktop-create-buffer 208
+  "/home/coc/asm_template/loadfile.h"
+  "loadfile.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  53
+  '(20 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1 48 37 30 47 41 62 66 29))))
+
+(desktop-create-buffer 208
+  "/home/coc/asm_template/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  97
+  '(65 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (indent-tabs-mode . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (19 32 48 74 45 8 6 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/mf_tut/hellofunc.c"
+  "hellofunc.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  44
+  '(44 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (44 1 73 43 18 69 84 96 20))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/mf_tut/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  19
+  '(20 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (20 1 8))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/mf_tut/hellomake"
+  "hellomake"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/mf_tut/hellomake.h"
+  "hellomake.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/note/lol.org"
+  "lol.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode evil-org-mode company-mode)
+  412
+  '(412 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/hk172/cnpmnc/lab.org"
+  "lab.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode evil-org-mode company-mode)
+  240
+  '(240 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (240 270 1 136))))
+
+(desktop-create-buffer 208
+  "/home/coc/hk172/cnpmnc/note.org"
+  "note.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode evil-org-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1 219))))
+
+(desktop-create-buffer 208
+  "/home/coc/.spacemacs"
+  ".spacemacs"
+  'emacs-lisp-mode
+  '(eldoc-mode page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode elisp-slime-nav-mode auto-compile-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1 5741 5252 5965 31 8972 3521 1777 1817 4647 5546 6193 5570 8938 5936 5908))))
+
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/data/input.txt"
+  "input.txt"
+  'text-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/mf_tut/hellomake.c"
+  "hellomake.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  27
+  '(27 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (27 77 94 75 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/ai_intro/old/checkers_2017.py"
+  "checkers_2017.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode hi-lock-mode anaconda-mode anaconda-eldoc-mode)
+  96
+  '(96 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode) (fill-column . 79))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  nil
+  "ai_intro"
+  'dired-mode
+  '(global-auto-revert-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  435
+  '(1 nil)
+  t
+  '("/home/coc/ai_intro/")
+  '((indicate-empty-lines) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/mf_tut/hellomake.o"
+  "hellomake.o"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  nil
+  "Templates"
+  'dired-mode
+  '(global-auto-revert-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  216
+  '(1 nil)
+  t
+  '("/home/coc/Templates/")
+  '((indicate-empty-lines) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/template_makefile/test/testpiler/main.cpp~"
+  "main.cpp~"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  1771
+  '(1771 nil)
+  t
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1771 1677 1676 821 3044 1 3064 3120 1553))))
+
+(desktop-create-buffer 208
+  "/home/coc/doc_command/emacs/spacemacs.org"
+  "spacemacs.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode hl-todo-mode projectile-mode evil-org-mode company-mode)
+  5811
+  '(5811 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1579 1585 5739 5740 6764 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/template_makefile/test/testpiler/main.o"
+  "main.o"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/template_makefile/test/testpiler/makefile"
+  "makefile"
+  'makefile-gmake-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  1402
+  '(1402 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1402 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/Templates/template_makefile/src/jni/jnifunctions.cpp"
+  "jnifunctions.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  nil
+  "template_makefile"
+  'dired-mode
+  '(global-auto-revert-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  224
+  '(224 nil)
+  t
+  '("/home/coc/Templates/template_makefile/")
+  '((indicate-empty-lines . t) (overwrite-mode))
+  '((mark-ring (224))))
+
+(desktop-create-buffer 208
+  "/home/coc/script/c/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  24
+  '(24 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (24 23 51 28 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/script/c/template.cc"
+  "template.cc"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  419
+  '(419 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (419 415 352 433 127 538 538 440 434 438 437 434 538 540 538 362))))
+
+(desktop-create-buffer 208
+  "/home/coc/.emacs.d/private/snippets/c++-mode/fj"
+  "fj"
+  'snippet-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode hl-todo-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode projectile-mode company-mode)
+  13
+  '(13 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (13 44 34 86 74 59 105 25 1))))
+
+(desktop-create-buffer 208
+  nil
+  "asm_template"
+  'dired-mode
+  '(global-auto-revert-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode yas-minor-mode projectile-mode company-mode)
+  472
+  '(1 nil)
+  t
+  '("/home/coc/asm_template/")
+  '((indicate-empty-lines) (overwrite-mode))
+  '((mark-ring (1 1))))
+
