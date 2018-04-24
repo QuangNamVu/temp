@@ -5,7 +5,7 @@ from exitstatus import ExitStatus
 
 def tree_bfs(root, targety, targetx, path_table):
     thislevel = [root]
-    max_step = 10
+    max_step = 20
     count = 0
     while thislevel and count < max_step:
         count += 1
