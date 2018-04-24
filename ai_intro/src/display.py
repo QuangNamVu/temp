@@ -1,7 +1,9 @@
 import numpy as np
 from rule import *
 
-def Display(display_map,targety,targetx):
+def Display(display_map,targety,targetx, message = None):
+    if message:
+        print("---------------\t", message)
     posy = display_map.posy
     posx = display_map.posx
     matrix = display_map.matrix.copy()
@@ -14,27 +16,43 @@ def Display(display_map,targety,targetx):
         matrix[posy + 1 ][posx ] = 4
 
     # print(matrix)
-    display_symbol(matrix)
+    display_symbol(matrix,display_map.dimension)
     print("count child is: ",len(display_map.child))
-    print()
+    # print("------------------------------------------")
 
 
-def Display_child(root,targety,targetx):
-    print('Display child')
+def Display_child(root,targety,targetx,message = None):
+    print(message)
     for idx,i in enumerate(root.child):
-        print("SUBROOT NUMBER :", idx)
-        Display(i, targetx,targety)
+        # print("SUBROOT NUMBER :", idx)
+        Display(i, targety,targetx, message +" move " + i.last_move +" NUMBER " + str(idx) )
 
-def display_symbol(matrix):
+
+def display_symbol(matrix,dimension):
+    end_symbol = '\t'
+    sym = "X"
+    if dimension is 'y':
+        sym = "Y"
+    elif dimension is 'z':
+        sym = "Z"
+
     for i in matrix:
         for j in i:
             if j == 0:
-                print(end=".\t")
+                print(end=end_symbol)
             elif j ==1:
-                print("■", end='\t')
+                print("⚫", end=end_symbol)
             elif j == 8:
-                print("○", end='\t')
+                print("⚐", end=end_symbol)
             elif j == 4:
-                print("△", end='\t')
+                print(sym, end=end_symbol)
         print()
 
+def TraceBack(target_node, ty, tx):
+    stack = []
+    while(target_node.parrent !=None):
+        stack.append(target_node)
+        target_node = target_node.parrent
+    for i in reversed(stack):
+        print(i.last_move, ty, tx)
+        Display(i,ty, tx)

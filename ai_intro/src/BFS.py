@@ -1,8 +1,6 @@
-from add_move import *
-from load import *
-from rule import *
 from generate import *
-from display import *
+import sys
+from exitstatus import ExitStatus
 
 
 def tree_bfs(root, targety, targetx, path_table):
@@ -16,12 +14,15 @@ def tree_bfs(root, targety, targetx, path_table):
             # TODO:
             # neu o vi tri dich return
 
-            if sub_node.posx == targetx and sub_node.posy == targety:
-                print('success')
-                return
+            if sub_node.posx == targetx and sub_node.posy == targety and sub_node.dimension is 'y':
+                print('SUCCESS')
+                # sys.exit(ExitStatus.success)
+                return sub_node
 
             Generate(sub_node, path_table)
             for i in sub_node.child:
                 nextlevel.append(i)
         print()
         thislevel = nextlevel
+
+

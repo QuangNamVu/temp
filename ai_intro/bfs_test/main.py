@@ -35,4 +35,7 @@ if __name__ == '__main__':
     child6 = child2.add_child(7)
     child6 = child2.add_child(8)
 
+    # import pdb
+    # pdb.set_trace()
+
     tree_bfs(root)

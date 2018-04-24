@@ -9,6 +9,8 @@ class NODE(object):
         self.dimension= d
         self.is_split = is_split
         self.child = []
+        self.last_move = None
+        self.parrent = None
 
     def available_rotate_left(self):
         y = self.posy
@@ -51,6 +53,7 @@ class NODE(object):
     def available_rotate_up(self):
         y = self.posy
         x = self.posx
+        # display_mapension = self.dimension
         if self.is_split and self.matrix[y-1][x] == 1:
             return True
 
@@ -68,6 +71,7 @@ class NODE(object):
     def available_rotate_down(self):
         y = self.posy
         x = self.posx
+        # print(self.dimension)
         if self.is_split and self.matrix[y+1][x] == 1:
             return True
 
@@ -77,7 +81,7 @@ class NODE(object):
         if self.dimension is 'y' and self.matrix[y+1][x] == 1 and self.matrix[y+2][x] == 1:
             return True
 
-        if self.dimension is 'z' and self.matrix[y+1][x] == 1:
+        if self.dimension is 'z' and self.matrix[y+2][x] == 1:
             return True
 
         return False

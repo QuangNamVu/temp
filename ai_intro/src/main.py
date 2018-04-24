@@ -7,23 +7,22 @@ from BFS import *
 
 #display de in truc tiep se khong ton RAM +CPU neu khong chay
 #======================================================================
-
-
-root = Load_map("../data/input.txt")
+root = Load_map("../data/2.txt")
 tx = root.target_x
 ty = root.target_y
+# ty tx la vi tri dich
+# khi chay dich se o vi tri nen
+#======================================================================
+
+
 
 # status_table()
 path_table = root.status_table()
 
-
-Display(root,root.target_y,root.target_x)
-
 Generate(root, path_table)
-child1 = root.child[2]
-Generate(child1, path_table)
+Display(root,ty,tx, "ROOT")
 
-print('------------------------------------')
-Display(child1,ty,tx)
-Display_child(child1,ty,tx)
-# tree_bfs(root, root.target_y, root.target_x, path_table)
+target_Node = tree_bfs(root,ty,tx,path_table)
+
+
+TraceBack(target_Node, ty, tx)
