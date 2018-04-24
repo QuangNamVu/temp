@@ -1,4 +1,9 @@
 * x
+obscure
+stem
+  resample
+  nape
+  demmand
   semifinal
   dealt
   alike
@@ -53,6 +58,7 @@ observation
 regular
 * urban
   | mb       | my bad                      |
+  | FYI      | For Your Information        |
   | macro    | phoi hop dong doi           |
   | XD       | laughing face               |
   | smurf    | play low account            |

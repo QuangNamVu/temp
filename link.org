@@ -1,9 +1,15 @@
+* firefox auth
+http://detectportal.firefox.com/success.txt
+* spacemacs
+0.200.13@25.3.1
+* 
+https://www.w3schools.com/charsets/ref_html_entities_b.asp
 current 3301
 http://1711141131131.xyz/
 https://twitter.com/1231507051321
 http://uncovering-cicada.wikia.com/wiki/The_Final_Puzzle
 
-Hidden Service lists and search engines
+* Hidden Service lists and search engines
 http://3g2upl4pq6kufc4m.onion/ – DuckDuckGo Search Engine
 http://xmh57jrzrnw6insl.onion/ – TORCH – Tor Search Engine
 http://zqktlwi4fecvo6ri.onion/wiki/index.php/Main_Page – Uncensored Hidden Wiki
