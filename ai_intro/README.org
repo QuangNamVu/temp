@@ -2,10 +2,10 @@
 Input: Ma trận kích thước [m+2]*[n+2]
 Ouput: List các bước di chuyển, Với trường hợp không ra tìm được lời giải, bài toán sẽ dừng.
 * Cấu trúc file:
-| [[ map/tên_map.txt  ]] | Input                                                |
-| [[ src/main.py]]       | Code thực thi                                        |
-| [[ src/display.py]]    | Hiển thị                                             |
-| [[ rc/generate.py  ]] | Tạo các bước di chuyển trái phải lên xuống từ 1 node |
+| [[map/tên_map.txt  ]] | Input                                                |
+| [[src/main.py]]       | Code thực thi                                        |
+| [[src/display.py]]    | Hiển thị                                             |
+| [[src/generate.py  ]] | Tạo các bước di chuyển trái phải lên xuống từ 1 node |
 * Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ
 
 status_table: Dùng để lưu vết có kích thước [m+2]*[n+2]*[3].
