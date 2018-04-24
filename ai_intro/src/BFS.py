@@ -5,8 +5,9 @@ from exitstatus import ExitStatus
 
 def tree_bfs(root, targety, targetx, path_table):
     thislevel = [root]
+    max_step = 10
     count = 0
-    while thislevel and count < 5:
+    while thislevel and count < max_step:
         count += 1
         nextlevel = list()
         for sub_node in thislevel:

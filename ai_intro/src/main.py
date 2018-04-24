@@ -5,7 +5,8 @@ from generate import *
 from display import *
 from BFS import *
 
-input = "2.txt"
+input = "3.txt"
+
 #display de in truc tiep se khong ton RAM +CPU neu khong chay
 #======================================================================
 root = Load_map("../map/" + input)

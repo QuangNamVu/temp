@@ -20,7 +20,6 @@ def Display(display_map,targety,targetx, message = None):
     # print("count child is: ",len(display_map.child))
     print("------------------------------------------")
 
-
 def Display_child(root,targety,targetx,message = None):
     print(message)
     for idx,i in enumerate(root.child):
@@ -42,8 +41,10 @@ def display_symbol(matrix,dimension):
                 print(end=end_symbol)
             elif j ==1:
                 print("⚫", end=end_symbol)
+# ☑
             elif j == 8:
                 print("⚐", end=end_symbol)
+
             elif j == 4:
                 print(sym, end=end_symbol)
         print()
