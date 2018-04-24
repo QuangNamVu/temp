@@ -19,4 +19,6 @@ class Load_map(NODE):
 
     def status_table(self):
         m,n = self.matrix.shape
-        return np.zeros((m,n,3), dtype=int)
+        table = np.zeros((m,n,3), dtype=int)
+        table[self.posy][self.posx][1] = 1
+        return table

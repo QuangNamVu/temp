@@ -63,3 +63,5 @@ def TraceBack(target_node, ty, tx):
         for j in range(20):
             print()
         time.sleep(0.8)
+
+    print("It took ", len(stack), " steps")

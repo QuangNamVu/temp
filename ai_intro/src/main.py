@@ -4,6 +4,7 @@ from rule import *
 from generate import *
 from display import *
 from BFS import *
+from DFS import *
 
 input = "3.txt"
 
@@ -26,6 +27,7 @@ if __name__ == "__main__":
     Display(root,ty,tx, "MAP")
 
     target_Node = tree_bfs(root,ty,tx,path_table)
+   # target_Node = tree_dfs(root,ty,tx,path_table)
 
 
     TraceBack(target_Node, ty, tx)

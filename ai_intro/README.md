@@ -1,5 +1,5 @@
 Input: Ma trận kích thước [m+2]*[n+2]
-Ouput: List các bước di chuyển
+Ouput: List các bước di chuyển, Với trường hợp không ra tìm được lời giải, bài toán sẽ dừng.
 
 Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ
 
@@ -10,3 +10,14 @@ Nếu status_table[1][2][0] == 1 có nghĩa block đã đi qua ô 1 2 với chi�
 Nếu status_table[1][2][1] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) y
 
 Nếu status_table[1][2][2] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) z
+
+
+Nhận xét
+
+Giải thuật DFS và BFS luôn chạy ra kết quả ( không loop) với luật rõ ràng vì:
+Số trường hợp tối đa sinh ra trong trường hợp bài 1 là (m*n*3) khi block chạy hết các ô và mỗi ô có 3 status
+
+Tìm kiếm BFS luôn cho ra lời giải tốt nhất
+
+Lời giải cho BFS trong src/map/3.txt mất 9 steps
+Lời giải cho DFS trong src/map/3.txt mất 53 steps
