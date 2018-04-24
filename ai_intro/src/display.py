@@ -17,8 +17,8 @@ def Display(display_map,targety,targetx, message = None):
 
     # print(matrix)
     display_symbol(matrix,display_map.dimension)
-    print("count child is: ",len(display_map.child))
-    # print("------------------------------------------")
+    # print("count child is: ",len(display_map.child))
+    print("------------------------------------------")
 
 
 def Display_child(root,targety,targetx,message = None):
@@ -54,5 +54,5 @@ def TraceBack(target_node, ty, tx):
         stack.append(target_node)
         target_node = target_node.parrent
     for i in reversed(stack):
-        print(i.last_move, ty, tx)
+        print(i.last_move)
         Display(i,ty, tx)
