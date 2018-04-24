@@ -1,13 +1,13 @@
 
 # Table of Contents
 
-1.  [Input](#org877fc6b)
-2.  [Cấu trúc file:](#org3ec4e61)
-3.  [Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ](#org91822ec)
-4.  [Nhận xét](#org39e3eb2)
+1.  [Input](#org52877a4)
+2.  [Cấu trúc file:](#org2253d51)
+3.  [Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ](#org42b77cd)
+4.  [Nhận xét](#orgccb869d)
 
 
-<a id="org877fc6b"></a>
+<a id="org52877a4"></a>
 
 # Input
 
@@ -15,7 +15,7 @@ Input: Ma trận kích thước [m+2]\*[n+2]
 Ouput: List các bước di chuyển, Với trường hợp không ra tìm được lời giải, bài toán sẽ dừng.
 
 
-<a id="org3ec4e61"></a>
+<a id="org2253d51"></a>
 
 # Cấu trúc file:
 
@@ -54,7 +54,7 @@ Ouput: List các bước di chuyển, Với trường hợp không ra tìm đư�
 </table>
 
 
-<a id="org91822ec"></a>
+<a id="org42b77cd"></a>
 
 # Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ
 
@@ -67,7 +67,7 @@ Nếu status_table[1][2][1] =` 1 có nghĩa block đã đi qua ô 1 2 với chi�
 Nếu status<sub>table</sub>[1][2][2] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) z.
 
 
-<a id="org39e3eb2"></a>
+<a id="orgccb869d"></a>
 
 # Nhận xét
 
