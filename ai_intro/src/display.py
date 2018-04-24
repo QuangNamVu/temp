@@ -1,5 +1,6 @@
 import numpy as np
 from rule import *
+import time
 
 def Display(display_map,targety,targetx, message = None):
     if message:
@@ -57,3 +58,8 @@ def TraceBack(target_node, ty, tx):
     for i in reversed(stack):
         print(i.last_move)
         Display(i,ty, tx)
+
+        # clear man hinh
+        for j in range(20):
+            print()
+        time.sleep(0.8)
