@@ -1,13 +1,13 @@
 
 # Table of Contents
 
-1.  [Input](#orgb588e87)
-2.  [Cấu trúc file:](#orge2f58c3)
-3.  [Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ](#org65dfb76)
-4.  [Nhận xét](#orgb3c7551)
+1.  [Input](#org5831718)
+2.  [Cấu trúc file:](#org6e03ee0)
+3.  [Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ](#orgcdbe1ce)
+4.  [Nhận xét](#org04f9cf9)
 
 
-<a id="orgb588e87"></a>
+<a id="org5831718"></a>
 
 # Input
 
@@ -15,7 +15,7 @@ Input: Ma trận kích thước [m+2]\*[n+2]
 Ouput: List các bước di chuyển, Với trường hợp không ra tìm được lời giải, bài toán sẽ dừng.
 
 
-<a id="orge2f58c3"></a>
+<a id="org6e03ee0"></a>
 
 # Cấu trúc file:
 
@@ -29,32 +29,32 @@ Ouput: List các bước di chuyển, Với trường hợp không ra tìm đư�
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">map/tên<sub>map.txt</sub></td>
-<td class="org-left">Input</td>
+<td class="org-left"><./map/1.txt></td>
+<td class="org-left">Input map 1</td>
 </tr>
 
 
 <tr>
-<td class="org-left">src/main.py</td>
+<td class="org-left"><./src/main.py></td>
 <td class="org-left">Code thực thi</td>
 </tr>
 
 
 <tr>
-<td class="org-left">src/display.py</td>
+<td class="org-left"><./src/display.py></td>
 <td class="org-left">Hiển thị</td>
 </tr>
 
 
 <tr>
-<td class="org-left">src/generate.py</td>
+<td class="org-left"><./src/generate.py></td>
 <td class="org-left">Tạo các bước di chuyển trái phải lên xuống từ 1 node</td>
 </tr>
 </tbody>
 </table>
 
 
-<a id="org65dfb76"></a>
+<a id="orgcdbe1ce"></a>
 
 # Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ
 
@@ -67,7 +67,7 @@ Nếu status<sub>table</sub>[1][2][1] = 1 có nghĩa block đã đi qua ô 1 2 v
 Nếu status<sub>table</sub>[1][2][2] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) z.
 
 
-<a id="orgb3c7551"></a>
+<a id="org04f9cf9"></a>
 
 # Nhận xét
 
