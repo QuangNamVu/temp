@@ -1,13 +1,13 @@
 
 # Table of Contents
 
-1.  [Input](#org52877a4)
-2.  [Cấu trúc file:](#org2253d51)
-3.  [Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ](#org42b77cd)
-4.  [Nhận xét](#orgccb869d)
+1.  [Input](#orgb588e87)
+2.  [Cấu trúc file:](#orge2f58c3)
+3.  [Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ](#org65dfb76)
+4.  [Nhận xét](#orgb3c7551)
 
 
-<a id="org52877a4"></a>
+<a id="orgb588e87"></a>
 
 # Input
 
@@ -15,7 +15,7 @@ Input: Ma trận kích thước [m+2]\*[n+2]
 Ouput: List các bước di chuyển, Với trường hợp không ra tìm được lời giải, bài toán sẽ dừng.
 
 
-<a id="org2253d51"></a>
+<a id="orge2f58c3"></a>
 
 # Cấu trúc file:
 
@@ -29,7 +29,7 @@ Ouput: List các bước di chuyển, Với trường hợp không ra tìm đư�
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">map/Tên<sub>File.txt</sub></td>
+<td class="org-left">map/tên<sub>map.txt</sub></td>
 <td class="org-left">Input</td>
 </tr>
 
@@ -54,20 +54,20 @@ Ouput: List các bước di chuyển, Với trường hợp không ra tìm đư�
 </table>
 
 
-<a id="org42b77cd"></a>
+<a id="org65dfb76"></a>
 
 # Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ
 
 status<sub>table</sub>: Dùng để lưu vết có kích thước [m+2]\*[n+2]\*[3].
 Tác Dụng: Để tránh node con giống node cha của cha, đặc biệt tránh loop trong DFS.
 
-Nếu status<sub>table</sub>[1][2][0] `= 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) x .
-Nếu status_table[1][2][1] =` 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) y.
+Nếu status<sub>table</sub>[1][2][0] = 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) x .
+Nếu status<sub>table</sub>[1][2][1] = 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) y.
 
 Nếu status<sub>table</sub>[1][2][2] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) z.
 
 
-<a id="orgccb869d"></a>
+<a id="orgb3c7551"></a>
 
 # Nhận xét
 

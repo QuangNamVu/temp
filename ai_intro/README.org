@@ -2,17 +2,17 @@
 Input: Ma trận kích thước [m+2]*[n+2]
 Ouput: List các bước di chuyển, Với trường hợp không ra tìm được lời giải, bài toán sẽ dừng.
 * Cấu trúc file:
-| map/Tên_File.txt | Input                                                |
-| src/main.py      | Code thực thi                                        |
-| src/display.py   | Hiển thị                                             |
-| src/generate.py  | Tạo các bước di chuyển trái phải lên xuống từ 1 node |
+| map/tên_map.txt | Input                                                |
+| src/main.py     | Code thực thi                                        |
+| src/display.py  | Hiển thị                                             |
+| src/generate.py | Tạo các bước di chuyển trái phải lên xuống từ 1 node |
 * Đối với Block độ dài là 2 có 3 chiều x,y,z ứng với trục tọa độ
 
 status_table: Dùng để lưu vết có kích thước [m+2]*[n+2]*[3].
 Tác Dụng: Để tránh node con giống node cha của cha, đặc biệt tránh loop trong DFS.
 
-Nếu status_table[1][2][0] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) x .
-Nếu status_table[1][2][1] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) y.
+Nếu status_table[1][2][0] = 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) x .
+Nếu status_table[1][2][1] = 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) y.
 
 Nếu status_table[1][2][2] == 1 có nghĩa block đã đi qua ô 1 2 với chiều(dimension) z.
 
