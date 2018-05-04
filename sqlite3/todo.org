@@ -1,0 +1,2 @@
+delete teacher from user_function
+

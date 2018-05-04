@@ -1,0 +1,187 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Apr 30 19:20:19 2018
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23271 2563 99119 903000) (desktop . "208") "coc@free" nil nil ((((font-backend xft x) (font . "-ADBO-Source Code Pro-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1") (font-parameter . "Source Code Pro") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#b2b2b2") (background-color . "#292b2e") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen . fullboth) (display-type . color) (background-mode . dark) (cursor-color . "DarkGoldenrod2") (environment) (eyebrowse-last-slot . 1) (eyebrowse-current-slot . 1) (eyebrowse-window-configs (1 (((min-height . 8) (min-width . 20) (min-height-ignore . 6) (min-width-ignore . 8) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 136) (min-pixel-width . 160) (min-pixel-height-ignore . 102) (min-pixel-width-ignore . 64) (min-pixel-height-safe . 34) (min-pixel-width-safe . 32)) vc (pixel-width . 1366) (pixel-height . 751) (total-width . 171) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (combination-limit . t) (hc (pixel-width . 1366) (pixel-height . 442) (total-width . 171) (total-height . 26) (normal-height . 0.588548601864181) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 678) (pixel-height . 442) (total-width . 85) (total-height . 26) (normal-height . 1.0) (normal-width . 0.4992636229749632) (buffer "main.cpp" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 371) (start . 1))) (leaf (last . t) (pixel-width . 688) (pixel-height . 442) (total-width . 86) (total-height . 26) (normal-height . 1.0) (normal-width . 0.5007363770250368) (buffer "update.cpp" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 237) (start . 1)))) (leaf (last . t) (pixel-width . 1366) (pixel-height . 309) (total-width . 171) (total-height . 18) (normal-height . 0.41145139813581894) (normal-width . 1.0) (buffer "*compilation*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 826) (start . 327)))) "")) (powerline-cache) (sticky) (persp) (persp-buffer-predicate-old . spacemacs/useful-buffer-p) (persp-buffer-predicate-generated . "Unprintable entity") (frameset--id . "F858-1BD3-DB1E-55C1") (frameset--mini t . t) (height . 45) (width . 168) (modeline . t) (minibuffer . t) (unsplittable) (left . 0) (top . 0) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 20) (min-height-ignore . 6) (min-width-ignore . 8) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 136) (min-pixel-width . 160) (min-pixel-height-ignore . 102) (min-pixel-width-ignore . 64) (min-pixel-height-safe . 34) (min-pixel-width-safe . 32)) vc (pixel-width . 1366) (pixel-height . 751) (total-width . 171) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (combination-limit . t) (hc (pixel-width . 1366) (pixel-height . 442) (total-width . 171) (total-height . 26) (normal-height . 0.588548601864181) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 678) (pixel-height . 442) (total-width . 85) (total-height . 26) (normal-height . 1.0) (normal-width . 0.4992636229749632) (buffer "main.cpp" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 371) (start . 1))) (leaf (last . t) (pixel-width . 688) (pixel-height . 442) (total-width . 86) (total-height . 26) (normal-height . 1.0) (normal-width . 0.5007363770250368) (buffer "update.cpp" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 237) (start . 1)))) (leaf (last . t) (pixel-width . 1366) (pixel-height . 309) (total-width . 171) (total-height . 18) (normal-height . 0.41145139813581894) (normal-width . 1.0) (buffer "*compilation*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 826) (start . 327)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("prepa" "done" "prepa" "DON" "cannot" "sele" "test." "counter" "256" "sche" "sch" "\\$mod\\+z" "config" "+z" "+0" "Left"))
+(setq register-alist (list (list 95 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,1963 (get-buffer ,"query.cpp")))) mk)) '(48 . "    cout<< \"cannot change \" << att<< endl;\n")))
+(setq file-name-history '("~/sqlite3/Makefile" "~/sqlite3/update.cpp" "~/sqlite3/header.h" "~/sqlite3/main.cpp" "~/sqlite3/sqlite3.md" "~/sqlite3/insert.cpp" "~/sqlite3/login.cpp" "~/sqlite3/login.o" "~/sqlite3/student.cpp" "~/sqlite3/student.o" "~/sqlite3/teacher.cpp" "~/sqlite3/query.cpp" "~/plan/todo.org" "~/sqlite3/insert.o" "~/sqlite3/string_convert.cpp" "~/sqlite3/string_convert.o" "~/git_temp/songs.org" "~/sqlite3/select.cpp" "~/sqlite3/table.cpp" "~/sqlite3/user.cpp" "~/sqlite3/insert_table.cpp" "~/sqlite3/note.org" "~/git_temp/pass.org" "~/.config/i3/config" "~/.i3blocks.conf" "~/doc_command/sqlite3.md" "~/git_temp/dic.org" "~/note/lol.org" "~/.config/i3/print_2s.sh" "~/darknet/gvc_doc/todo.org" "~/book/linux/bash.org" "~/Templates/latex/mhhth.pdf" "~/Templates/latex/mhhth.tex" "~/.emacs.d/layers/LAYERS.org" "~/doc_command/emacs/spacemacs.org" "~/latex/Templates/mhhth.tex" "~/doc_command/vim/command.txt" "~/sqlite3/create_table" "~/darknet/gvc_doc/command.org" "~/darknet/gvc_doc/file_structure.org" "~/sqlite3/create_table.cpp" "~/sqlite3/create_user.cpp" "~/sqlite3/create_user.o" "~/mf_tut/Makefile" "~/mf_tut/main.cpp" "~/Templates/mf_tut/func.c" "~/Templates/mf_tut/main.c" "~/Templates/mf_tut/header.h" "~/Templates/mf_tut/hellomake.c" "~/Templates/mf_tut/hellofunc.c" "~/Templates/mf_tut/func.cpp" "~/Templates/mf_tut/hellomake.h" "~/Templates/mf_tut/Makefile" "~/sqlite3/head" "~/script/c/Makefile" "~/asm_template/loadfile.h" "~/doc_command/sqlite3.org" "~/asm_template/login.cpp" "/D/ai/yolo3/darknet/note_result.org" "~/script/version/Makefile" "~/script/version/opencv.cc" "~/script/version/version.org" "~/doc_command/linux.org" "~/doc_command/gdb.org" "~/git_temp/ai_intro/src/rule.py" "~/git_temp/ai_intro/src/main.py" "~/git_temp/ai_intro/src/add_move.py" "~/git_temp/ai_intro/src/generate.py" "~/git_temp/ai_intro/src/display.py" "~/git_temp/ai_intro/bfs_test/main.py" "~/hk172/cnpmnc/note.org" "/D/parallel_proccessing/asm/note" "~/git_temp/link.org" "~/ai_intro/src/generate.py" "~/ai_intro/src/display.py" "~/ai_intro/old/1512107.py" "~/ai_intro/src/main.py" "~/ai_intro/src/BFS.py" "~/ai_intro/bfs_test/main.py" "~/ai_intro/src/load.py" "~/ai_intro/src/rule.py" "~/ai_intro/src/add_move.py" "~/ai_intro/bfs_test/makefile" "~/ai_intro/src/Makefile" "~/asm_template/main.cpp" "~/asm_template/main" "~/asm_template/login.c" "~/asm_template/Makefile" "~/asm_template/main.c" "~/Templates/mf_tut/hellomake" "~/asm_template/hellomake.cpp" "~/asm_template/hellomake.h" "~/asm_template/hellofunc.cpp" "~/ai_intro/src/tree.py" "~/ai_intro/src/read.py" "~/ai_intro/data/input.txt" "~/ai_intro/main.py" "~/ai_intro/old/checkers_2017.py" "~/ai_intro/old/main.py" "~/Templates/mf_tut/hellomake.o" "~/asm_template/foo1.cpp" "~/asm_template/include/account.h" "~/asm_template/.dir-locales.el" "~/asm_template/src/main.cpp" "~/script/version/opencv.py" "~/doc_command/version.org" "~/doc_command/ranger/command.txt" "~/plan/todo.org.1" "~/learning/trick.org" "~/.config/polybar/config" "~/.config/installed_package/Packages" "~/script/c/template.cc" "~/.emacs.d/private/snippets/cc-mode/for" "~/.emacs.d/private/snippets/c++-mode/fori" "~/.emacs.d/.cache/.emacs.desktop" "~/.config/polybar/theme/1/config" "~/.config/i3status/config" "~/.config/polybar/theme/2/config" "~/.config/polybar/launch.sh" "~/.zprofile" "~/.config/i3blocks/i3blocks.conf" "/D/parallel_proccessing/lab/7/note.org" "/D/parallel_proccessing/lab/7/input_dir/sample.txt" "/D/parallel_proccessing/lab/6/input_dir/milano_temps.csv" "/D/parallel_proccessing/lab/7/max_temp.java" "/D/parallel_proccessing/lab/6/MOM.java" "~/ttcnpm-172-36/.gitlab-ci.yml" "~/GetCoordinatesGeocode/app/src/main/java/dev/edmt/getcoordinatesgeocode/MainActivity.java" "~/GetCoordinatesGeocode/app/src/main/java/dev/edmt/getcoordinatesgeocode/HttpDataHandler.java" "~/Templates/convert/Makefile" "/D/parallel_proccessing/asm/tri_repo/sequence/BinaryFilesToHadoopSequenceFile.java" "~/script/c/max_heap_display.c" "~/datamining/note.org" "~/book/note.org" "~/ai/installed/install_pip.list" "~/ai/doc/algorithm.org" "~/doc_command/git.org" "~/script/java/j.java" "~/Templates/ipython/Untitled.ipynb" "~/latex/Templates/cv.tex" "~/latex/build/cv.tex" "~/plan/buy.org" "~/Templates/note.org" "~/ttcnpm-172-36/job_market/build.gradle" "~/Templates/gitlab-ci-android/app/build.gradle" "~/Templates/gitlab-ci-android/.gitlab-ci.yml" "~/ai/note.org" "~/doc_command/spacemasc.org" "~/doc_command/tensorflow.org" "~/english/toeic/100-bai-test-luyen-thi-toeic-co-dap-an.pdf" "~/english/formula/tenes.jpg" "~/doc_command/vim.org" "/D/ai/yolo3/darknet/cfg/voc.data" "/D/ai/yolo3/darknet/data/voc.names" "~/latex/build/cv.aux" "~/parallel_proccessing/lab/4/Makefile" "/D/ai/yolo2/Vehicle-Detection/YOLO/voc.data" "~/.aliases" "~/ai/prj/Vehicle-Detection/YOLO/voc.data" "~/ai/prj/Vehicle-Detection/YOLO/voc.names" "~/Templates/Md5.java" "~/parallel_proccessing/asm/tri_repo/sequence/ImageDuplicatesRemover.java" "~/ai/prj/Vehicle-Detection/SSD/MobileNet/MobileNetSSD_deploy.prototxt" "~/ai/prj/Vehicle-Detection/README.md" "~/Templates/x/HelloWorld.java" "~/parallel_proccessing/asm/coc_repo/Makefile" "~/parallel_proccessing/asm/coc_repo/src/md5.java" "~/parallel_proccessing/asm/coc_repo/md5.java" "~/vng/cv/cv2.tex" "~/vng/cv/cv.tex" "~/hk172/tthcm/presentation/trong_sach.pdf" "~/eclipse-workspace/parrallel_asm/src/md5.java" "~/parallel_proccessing/lab/6/MOM.java" "~/map/xe50.txt" "~/parallel_proccessing/asm/tri_repo/sequence/run.py" "~/Documents/tex.txt" "~/Dropbox/ai/svhn/train.py" "~/Dropbox/ai/svhn/load_mat.py" "~/Dropbox/ai/svhn/test.py" "~/latex/Assignment_Submission_Template/template.tex" "~/latex/Assignment_Submission_Template/template.aux" "~/latex/temp.tex" "~/parallel_proccessing/asm/src/Makefile" "~/parallel_proccessing/asm/src/HASH_IMG.java" "~/parallel_proccessing/lab/4/mat_mul.c" "~/parallel_proccessing/lab/6/note.org" "~/parallel_proccessing/lab/6/Lab6-Hadoop/src/TopN.java" "~/parallel_proccessing/lab/6/Lab6-Hadoop/TTSS/pg201.txt" "~/parallel_proccessing/lab/6/Lab6-Hadoop/TTSS/forum_users.tsv" "~/parallel_proccessing/lab/4/ex1.c" "~/parallel_proccessing/lab/4/matrix.c" "~/.config/.vimrc" "~/parallel_proccessing/lab/4/ex2.c" "~/parallel_proccessing/lab/4/matrix.cc" "~/.vimrc" "~/parallel_proccessing/mpi/Makefile" "~/html2text/output/1.md" "~/parallel_proccessing/lab/4/mpi_prime.c" "~/.config/.Xmodmap" "~/Dropbox/ai/svhn/cnn.ipynb" "~/ai/mnist/mnist_with_summaries.py" "~/Templates/temp.txt" "~/ai/mnist/mnist.py" "~/ai/mnist/cnn_mnist.py" "~/Templates/latex.tex" "~/ttcnpm-172-36/git_intro/git_enhance.org" "~/parallel_proccessing/lab/6/mean_of_max.java" "~/.zshrc" "~/aliases/hadoop29.aliases" "~/parallel_proccessing/lab/6/Lab6-Hadoop/TTSS/milano_temps.csv" "~/hd_tut/input_dir/sample.txt" "~/parallel_proccessing/lab/6/Lab6-Hadoop/readme.txt" "~/hd_tut/ProcessUnits.java" "~/ttcnpm-172-36/note.org" "~/parallel_proccessing/lab/4/note.txt" "~/Dropbox/ai/cnn/train.py" "~/ai/cnn/sign.py" "~/doc_command/window_command.org" "/etc/fstab" "/mnt/ai/assignment/cnn/cnn.ipynb" "~/ai/cnn/sign.ipynb" "~/plan/install.org" "~/script/c/prim.c" "~/ttcnpm-172-36/feature_list/nguoi_tim_viec.org" "~/stock/data/AAPL.csv" "~/stock/pandas_intro.py" "~/.config/termite/config" "~/ttcnpm-172-36/week7/list_chuc_nang/nguoi_tim_viec.org" "~/doc_command/window.org" "~/Android/Sdk/platform-tools/adb" "~/Templates/config.properties" "~/plan/Disassemble.org" "~/temp/temp_file.org" "~/ttcnpm-172-36/doc/intro_git.org" "~/ttcnpm-172-36/final/doc/meetingminutes/UC/AD.vsdx" "~/.config/i3/auto_xmodmap.sh" "~/.emacs.d/private/snippets/c-mode/stdio" "~/script/c/multi_thread.c" "~/book/chinese/TuHocHanNguCoBan.prc" "~/book/note" "~/parallel_proccessing/mpi/ex3.cpp" "~/ttcnpm-172-36/report/Weekly-5.docx" "~/.config/install_pacman.list" "~/script/c/hello.c" "~/parallel_proccessing/mpi/hello.c" "~/.spacemacs" "~/plan/conclusion" "~/plan/daily.org" "~/temp/.bash_profile" "~/1512107.py" "~/.emacs.d/private/snippets/c++-mode/io" "~/.emacs.d/private/snippets/c++-mode/std" "~/.emacs.d/private/snippets/c++-mode/acm" "~/script/c/intro.c" "/etc/X11/xorg.conf.d/00-keyboard.conf" "~/qtkdks/note.org" "~/parallel_proccessing/mpi/blocking.c" "~/parallel_proccessing/mpi/ex2.c" "~/.bash_profile" "~/.bashrc" "/etc/bash.bashrc" "~/parallel_proccessing/mpi/note.org" "~/doc_command/emacs/shell.txt" "~/parallel_proccessing/mpi/array.c" "~/script/c/ex1_mpi.c" "~/script/c/ex1.cpp" "/mnt/video/x/cute/note.org" "~/parallel_proccessing/mpi/muli.c" "~/parallel_proccessing/mpi/ex4.c" "~/.emacs.d/private/snippets/cc-mode/printf" "~/parallel_proccessing/mpi/mul.c" "~/.emacs.d/private/snippets/c-mode/assert" "~/.emacs.d/private/snippets/README.md" "~/.emacs.d/private/snippets/c-lang-common/fopen" "~/parallel_proccessing/mpi/cal_pi.cpp" "~/parallel_proccessing/mpi/ex3.c" "~/parallel_proccessing/lab/4/reduce_avg.c" "~/parallel_proccessing/lab/4/time.c" "~/parallel_proccessing/lab/4/note" "~/parallel_proccessing/mpi/prim.c" "~/mpiBench/mpiBench.c" "~/parallel_proccessing/lab/4/sum.c" "~/parallel_proccessing/lab/4/mpi_hello.c" "~/parallel_proccessing/lab/4/mpi_hello" "~/parallel_proccessing/lab/4/mpi.c" "~/error" "~/doc_command/wifi" "~/.ssh/config" "~/doc_command/linux" "~/script/c/ex1_mpi.cc" "~/script/c/time_cal.sh" "~/.emacs.d/private/snippets/c-mode/printfs" "~/.emacs.d/private/snippets/c-mode/printf" "~/.emacs.d/snippets/c-mode/malloc" "~/.emacs.d/layers/+completion/auto-completion/README.org" "/tmp/yasnippet/README.mdown" "~/script/bash/searchfile.sh" "~/script/keystrings" "~/script/convert/html2md.sh" "~/html2text/output/111.md" "~/html2text/output.md" "~/html2text/README.md" "~/doc_command/firefox.org" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/src/config.zsh" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" "~/doc_command/zsh.org" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/README.md" "~/tmp/input_dir/sample.txt" "~/doc_command/hadoop.org" "~/oh-my-zsh/custom/plugins/zsh-autosuggestions/DESCRIPTION" "~/parallel_proccessing/asm/note" "/usr/share/WyabdcRealPeopleTTS/README" "~/plan/good_thing.org" "~/book/linux/temp_note" "~/.xinitrc" "~/parallel_proccessing/asm/tempe.txt" "~/hd_tut/units/ProcessUnit.java" "~/hd_tut/wordcount/WordCount.java" "~/asliases/hadoop-2.9.0.aslias" "~/hadoo-2.9.0/libexec/hadoop-config.sh" "/etc/hadoop/core-site.xml" "~/hd_tut/wordcount/ReduceClass.java" "/sudo:root@localhost:/etc/conf.d/hadoop" "/etc/hadoop/hadoop-env.sh" "/etc/profile.d/hadoop.sh" "~/hadoop-2.9.0/etc/hadoop/hadoop-env.sh" "~/hadoop-2.9.0/etc/hadoop/yarn-site.xml" "~/hadoop-2.9.0/etc/hadoop/mapred-site.xml" "~/hadoop-2.9.0/etc/hadoop/hdfs-site.xml" "~/Downloads/raw.c" "~/hadoop-2.9.0/etc/hadoop/core-site.xml" "~/hadoop-2.9.0/etc/hadoop/mapred-site.xml.template" "~/script/bash/game/thukho.sh" "~/script/bash/game/colormouse.sh" "~/script/bash/game/autoclick" "/mnt/video/x/note.org" "~/doc_command/pacman_install.sh" "~/.config/i3/currentpwd.sh" "~/.emacs.d/layers/+tools/shell/README.org" "/etc/pacman.d/mirrorlist" "~/.bash_aliases" "~/.alias" "~/.emacs.d/init.el" "~/.config/.bashrc" "~/hadoop-2.9.0/README.txt" "~/hadoop-2.7.5/etc/hadoop/mapred-site.xml" "~/hadoop-2.7.5/etc/hadoop/core-site.xml" "~/hadoop-2.7.5/etc/hadoop/hdfs-site.xml" "~/doc_command/bash.org" "~/doc_command/install.sh.gz" "~/ttcnpm-172-36/ui/profile.org" "~/book/linux/bash_tex.md" "~/git_temp/git_spacemacs.org" "~/git_temp/abc.org" "~/git_temp/coc_doc.org" "~/note/link.org" "~/.bash_history" "~/.ssh/id_rsa.pub" "~/parallel_proccessing/intro/ParallelProcessing_1_Intro.ppt" "~/hadoop-2.7.5/etc/hadoop/capacity-scheduler.xml" "~/hadoop-2.7.5/etc/hadoop/hadoop-env.sh" "~/hadoop-2.7.5/etc/hadoop/yarn-site.xml" "~/hadoop-2.7.5/etc/hadoop/yarn-env.sh" "~/hadoop-2.7.5/etc/hadoop/mapred-site.xml.template" "~/hadoop-2.7.5/etc/hadoop/mapred-env.sh" "~/hadoop-2.7.5/README.txt" "~/note/pass" "~/.Xmodmap" "~/.emacs.d/layers/+source-control/git/README.org" "~/plan/TODO.org" "~/ttcnpm-172-36/doc/git_enhance.org" "~/note/wlp2s0-Antivirut" "/etc/hadoop/hdfs-site.xml" "~/plan/cš¢äm_giác.txt" "~/e0a1d6ab2682d2c47746950b84c0b6ee/markdown-sample.md" "~/book/linux/bash_shell_text.org" "~/book/linux/(In a Nutshell) Cameron Newham-Learning the bash Shell  Unix Shell Programming-O'Reilly Media (2005).pdf" "~/old.bashrc" "~/tor/install.org" "~/.config/fish/config.fish" "~/game.Xmodmap" "~/hk172/lichhoc.png" "~/.emacs.d/doc/DOCUMENTATION.org"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/update.cpp"
+  "update.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  237
+  '(237 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (237 241 708 613 584 710 107 21 457 710 184 480 155 256 1 763))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  371
+  '(111 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (132 356 328 318 302 1 303 134 86 109 251 251 251 251 251 251))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  127
+  '(120 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (120 17 90 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/header.h"
+  "header.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  410
+  '(410 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (517 433 369 324 292 372 412 432 192 320 61 152 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/sqlite3.md"
+  "sqlite3.md"
+  'markdown-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode auto-highlight-symbol-mode orgtbl-mode mmm-mode)
+  1454
+  '(1454 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (tab-width . 4) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1454 1457 1541 1766 956 1006 991 973 1022 1024 940 1025 915 1 881 935))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/login.cpp"
+  "login.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  129
+  '(129 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (129 254 21 444 450 460 127 124 121 107 70 20 19 1 126))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/login.o"
+  "login.o"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode company-mode projectile-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/student.cpp"
+  "student.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  79
+  '(79 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (79 17 33 27 81 20 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/student.o"
+  "student.o"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode company-mode projectile-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/teacher.cpp"
+  "teacher.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  59
+  '(59 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (59 53))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/query.cpp"
+  "query.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode)
+  729
+  '(729 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (729 248 247 393 227 418 520 678 651 608 623 657 512 593 727 789))))
+
+(desktop-create-buffer 208
+  "/home/coc/sqlite3/insert.o"
+  "insert.o"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode company-mode projectile-mode yas-minor-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . no-conversion) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/coc/plan/todo.org"
+  "todo.org"
+  'org-mode
+  '(page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ace-pinyin-mode anzu-mode evil-escape-mode flx-ido-mode pangu-spacing-mode persp-mode vi-tilde-fringe-mode volatile-highlights-mode helm-mode hl-todo-mode company-mode projectile-mode yas-minor-mode evil-org-mode)
+  35
+  '(35 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (35 74 1))))
+
+(desktop-create-buffer 208
+  "/home/coc/.emacs.d/.cache/recentf"
+  "recentf"
+  'fundamental-mode
+  '(global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode evil-escape-mode flx-ido-mode persp-mode volatile-highlights-mode helm-mode projectile-mode)
+  14446
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-emacs-unix) (overwrite-mode))
+  '((mark-ring nil)))
+

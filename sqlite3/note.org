@@ -1,0 +1,41 @@
+* sql statement
+string sqlstatement =
+    "INSERT INTO abe_account (username, name, department, password) VALUES ("
+    + quotesql(username) + ","
+    + quotesql(name) + ","
+    + quotesql(department) + ","
+    + quotesql(password) + ");";
+* User
+Loai:
+1. administrator
+2. teacher
+3. student
+** Them Teacher
+*** Ten
+*** DOB
+*** Bang cap
+*** Chuc vu
+
+** Them student
+*** Ten
+*** DOB
+*** Bang cap
+*** Chuc vu
+** Xoa Teacher
+*** search theo ten
+*** search theo ID
+*** list ra cac so tt
+** Xoa student
+*** search theo ten
+*** search theo MSSV
+* Student
+Xem diem
+Xem GPA
+Xem tong tin chi
+Xem cac mon dang hoc
+* Teacher
+Xem cac mon dang day
+* Bonus
+** Them student Mssv default hoac tu dien
+** log file khi sua diem
+** Search substring
