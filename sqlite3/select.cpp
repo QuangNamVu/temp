@@ -5,6 +5,8 @@ string query_select(string att,string table,string condition){
   int rc;
   sqlite3_stmt * stmt;
   string s = "-1",query_stmt =
+
+
     "SELECT " + att +
     " from " + table +
     " where ( " + condition + " );";
@@ -35,15 +37,82 @@ string query_select(string att,string table,string condition){
   return s;
 }
 
-void select_all(string table, string query_result[100]){
-  // cout<< "---------------------------------------------------------------------------------------------"<<endl;
+void  display_teacher_user(string user_name){
+  sqlite3 *db;
+  int rc;
+  sqlite3_stmt * stmt;
+  string query_stmt = "select * from teacher where USER_NAME == " + quotesql(user_name) +";" ;
+  if (sqlite3_open("test.db", &db) != SQLITE_OK)
+    {
+      cout << "Failed to open db\n";
+      sqlite3_finalize(stmt);
+      sqlite3_close(db);
+    }
+  if (sqlite3_prepare(db, query_stmt.c_str(), -1 , &stmt, NULL)  != SQLITE_OK){
+
+    printf("%d\n", -1  );
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+  }
+
+  int ctotal = sqlite3_column_count(stmt);
+  int res = 0;
+  res = sqlite3_step(stmt);
+  if (res == SQLITE_ROW) {
+    cout<< left << setw(5)<< "";
+    for (int i = 0; i < ctotal; ++i) {
+      string s = (char *)sqlite3_column_text(stmt,i);
+      cout<< left<< setw(23)<< s;
+    }
+    cout<< endl;
+  }
+  sqlite3_finalize(stmt);
+  sqlite3_close(db);
+}
+
+void  display_student_user(string user_name){
+  sqlite3 *db;
+  int rc;
+  sqlite3_stmt * stmt;
+  string query_stmt = "select * from student where USER_NAME == " + quotesql(user_name) +";" ;
+  if (sqlite3_open("test.db", &db) != SQLITE_OK)
+    {
+      cout << "Failed to open db\n";
+      sqlite3_finalize(stmt);
+      sqlite3_close(db);
+    }
+  if (sqlite3_prepare(db, query_stmt.c_str(), -1 , &stmt, NULL)  != SQLITE_OK){
+
+    printf("%d\n", -1  );
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+  }
+
+  int ctotal = sqlite3_column_count(stmt);
+  int res = 0;
+  res = sqlite3_step(stmt);
+  if (res == SQLITE_ROW) {
+    cout<< left << setw(5)<< "";
+    for (int i = 0; i < ctotal; ++i) {
+      string s = (char *)sqlite3_column_text(stmt,i);
+      cout<< left<< setw(23)<< s;
+    }
+    cout<< endl;
+  }
+  sqlite3_finalize(stmt);
+  sqlite3_close(db);
+}
+
+string * select_all(string table){
+  cout << "\033[2J\033[1;1H";
+  string * query_result = new string[100];
 
   if (table == "student") {
     cout<< "----------------------------------------------------------STUDENT-------------------------------------------------------------"<<endl;
   }
 
   if (table == "teacher") {
-    cout<< "----------------------------------------------------------TEACHER-------------------------------------------------------------"<<endl;
+    cout<< "----------------------------------------------------------FACULTY-------------------------------------------------------------"<<endl;
   }
   sqlite3 *db;
   int rc;
@@ -55,14 +124,14 @@ void select_all(string table, string query_result[100]){
       cout << "Failed to open db\n";
       sqlite3_finalize(stmt);
       sqlite3_close(db);
-      return;
+      return NULL;
     }
   if (sqlite3_prepare(db, query_stmt.c_str(), -1 , &stmt, NULL)  != SQLITE_OK){
 
     printf("%d\n", -1  );
     sqlite3_finalize(stmt);
     sqlite3_close(db);
-    return;
+    return NULL;
   }
 
   int ctotal = sqlite3_column_count(stmt);
@@ -91,15 +160,18 @@ void select_all(string table, string query_result[100]){
   query_result[0] = to_string(count);
   sqlite3_finalize(stmt);
   sqlite3_close(db);
+  return query_result;
 }
 
-void select_like (string table, string att, string keyword, string query_result[100]){
+string * select_like (string table, string att, string keyword){
+  cout << "\033[2J\033[1;1H";
+  string * query_result = new string[100];
   if (table == "student") {
     cout<< "----------------------------------------------------------STUDENT-------------------------------------------------------------"<<endl;
   }
 
   if (table == "teacher") {
-    cout<< "----------------------------------------------------------TEACHER-------------------------------------------------------------"<<endl;
+    cout<< "----------------------------------------------------------FACULTY-------------------------------------------------------------"<<endl;
   }
   sqlite3 *db;
   int rc;
@@ -111,14 +183,14 @@ void select_like (string table, string att, string keyword, string query_result[
       cout << "Failed to open db\n";
       sqlite3_finalize(stmt);
       sqlite3_close(db);
-      return;
+      return NULL;
     }
   if (sqlite3_prepare(db, query_stmt.c_str(), -1 , &stmt, NULL)  != SQLITE_OK){
 
     printf("%d\n", -1  );
     sqlite3_finalize(stmt);
     sqlite3_close(db);
-    return;
+    return NULL;
   }
 
   int ctotal = sqlite3_column_count(stmt);
@@ -147,4 +219,5 @@ void select_like (string table, string att, string keyword, string query_result[
   query_result[0] = to_string(count);
   sqlite3_finalize(stmt);
   sqlite3_close(db);
+  return query_result;
 }

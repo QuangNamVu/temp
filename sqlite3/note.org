@@ -1,3 +1,8 @@
+admin khi them bo khoang trong khong them sdt va address
+chuyen mon
+giang vien doi mat khau cua giang vien
+search teacher name
+delete teacher co delete user khong?
 * sql statement
 string sqlstatement =
     "INSERT INTO abe_account (username, name, department, password) VALUES ("
@@ -39,3 +44,4 @@ Xem cac mon dang day
 ** Them student Mssv default hoac tu dien
 ** log file khi sua diem
 ** Search substring
+

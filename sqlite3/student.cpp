@@ -1,5 +1,6 @@
 #include <header.h>
 
-void student_func(int * is_exit){
+int student_func(string user_name){
   cout<< "student function"<< endl;
+  return 0;
 }

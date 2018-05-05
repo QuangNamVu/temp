@@ -7,7 +7,7 @@ void update_condition(string table_name, string att, string value, string condit
   string sqlstatement =
     "update "+  table_name+" set " +att + "= " + quotesql(value) +" where ("
     + condition + ");";
-  cout<< sqlstatement<< endl;
+  // cout<< sqlstatement<< endl;
   if (sqlite3_open("test.db", &db) != SQLITE_OK)
     {
       cout << "Failed to open db\n";
@@ -38,7 +38,7 @@ void update_condition(string table_name, string att, int v, string condition){
   string sqlstatement =
     "update "+  table_name+" set " +att + "= " + quotesql(value) +" where ("
     + condition + ");";
-  cout<< sqlstatement<< endl;
+  // cout<< sqlstatement<< endl;
   if (sqlite3_open("test.db", &db) != SQLITE_OK)
     {
       cout << "Failed to open db\n";

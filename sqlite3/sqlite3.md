@@ -1,93 +1,81 @@
+INSERT INTO object (MSMH, MSSV, GV_ID, DIEM, TIN_CHI, IS_PASS)
+VALUES ('CC01','1712346','S1951','7.5', '3', 1);
+
+INSERT INTO subject (MSMH, NAME) 
+VALUES ('CC01','mo hinh hoa');
 # import;
 delete from user;
 delete from teacher;
 delete from student;
 delete from subject;
+delete from object;
 .mode csv
-.import sample/user.csv user
-.import sample/teacher.csv teacher
-.import sample/student.csv student
-select * from teacher;
-select * from user;
-select * from student;
+.import /home/coc/sqlite3/sample/user.csv user
+.import /home/coc/sqlite3/sample/teacher.csv teacher
+.import /home/coc/sqlite3/sample/student.csv student
+.import /home/coc/sqlite3/sample/object.csv  object
+.import /home/coc/sqlite3/sample/subject.csv subject
+select * from object;
+select * from subject;
 
 delete from teacher;
 # Create table;
-PRAGMA foreign_keys=off;
 drop table user;
-CREATE TABLE IF NOT EXISTS user(
+drop table student;
+drop table teacher;
+
+CREATE TABLE  user(
 USER_NAME         UNIQUE NOT NULL,
 PASSWORD          TEXT,
 PERMISSION        INT
 );
 
-drop table student;
-CREATE TABLE IF NOT EXISTS student(
+CREATE TABLE  student(
 USER_NAME         TEXT PRIMARY KEY   NOT NULL,
 NAME              TEXT,
 DOB               DATETIME,
-ADDRESS           TEXT,
-CONSTRAINT fk_id
-    FOREIGN KEY (USER_NAME)
-    REFERENCES user(USER_NAME)
-    ON DELETE CASCADE
+ADDRESS           TEXT
 );
 
-drop table teacher;
-CREATE TABLE IF NOT EXISTS teacher(
+CREATE TABLE  teacher(
 USER_NAME         TEXT    NOT NULL,
 NAME              TEXT    NOT NULL,
 DOB               DATETIME,
 PHONE             TEXT,
-ADDRESS           TEXT,
-CONSTRAINT fk_id
-    FOREIGN KEY (USER_NAME)
-    REFERENCES user(USER_NAME)
-    ON DELETE CASCADE
-);
+ADDRESS           TEXT);
 
-drop table subject;
-CREATE TABLE subject(
-MSMH          TEXT NOT NULL,
+drop table object;
+CREATE TABLE object(
+MSMH          TEXT      NOT NULL,
 MSSV          TEXT      NOT NULL,
 GV_ID         TEXT      NOT NULL,
-TICH_LUY      REAL,
-IS_PASS       NOT NULL DEFAULT 0,
+DIEM          REAL      NOT NULL DEFAULT -1,
+TIN_CHI       REAL      NOT NULL DEFAULT 0,
+IS_PASS       REAL      NOT NULL DEFAULT 0,
 PRIMARY KEY (MSMH,MSSV, GV_ID));
 
 
-# PRAGMA
-PRAGMA foreign_keys=on;
-select NAME from teacher where USER_NAME == 'S0951';
-select password from user where USER_NAME == 'S0951';
-delete from user where USER_NAME == 'S0951';
-select NAME from teacher where USER_NAME == 'S0951';
+drop table subject;
+CREATE TABLE subject(
+MSMH          TEXT PRIMARY KEY   NOT NULL,
+NAME          TEXT DEFAULT NULL,
+IS_FULL       NOT NULL DEFAULT 0,
+IS_OUT_DATE   NOT NULL DEFAULT 0);
 
-# Schema;
-.schema user
-.schema teacher
-.schema student
-.schema subject
 # Insert;
 INSERT INTO user (USER_NAME,PASSWORD,PERMISSION) 
 VALUES ('NguyenVanB', 'password', 'teacher');
-INSERT INTO teacher (USER_NAME,NAME,ADDRESS,DOB,DESCRIBE) 
-VALUES ('NguyenVanB', 'Nguyen Van Binh','Dang Van Bi', '2007-18-3', 'motion');
-## Student;
-INSERT INTO student (MSSV,USE_NAME,PASS,DOB) 
-VALUES (1511111, 'Tran Van A', 'password', '2007-18-3');
-## Subject;
-INSERT INTO student (MSSV,USE_NAME,PASS,DOB) 
-VALUES (1511111, 'Tran Van A', 'password', '2007-18-3');
-
+INSERT INTO teacher (USER_NAME,NAME,DOB) 
+VALUES ('NguyenVanB', 'Nguyen Van Binh', '2007-18-3');
 # Update;
 update user set PASSWORD = 'std' where USER_NAME == 1710001;
 select PERMISSION from user where USER_NAME == 'admin' AND PASSWORD == 'a';
 # View select all;
-select * from user;
+DELETE FROM teacher WHERE USER_NAME == 'A';
 select * from teacher;
+select * from user;
 select * from student;
-DELETE FROM user WHERE USER_NAME == 'NguyenVanB';
+
 # Drop;
 drop table USER;
 # Export sqlite to csv;
@@ -97,6 +85,7 @@ delete from student;
 .headers on
 .mode csv
 .output sample/user.csv 
+
 select * from user;
 .output stdout
 
@@ -109,53 +98,3 @@ select * from student;
 .output stdout
 
 .headers off
-# exit quit
-.quit
-C-D
-
-# Link;
-https://www.sqlite.org/cli.html
-# List all table;
-.tables
-# search ;
-SELECT * FROM USER WHERE USER_NAME LIKE '%17%';
-# foreign key;
-ALTER TABLE user ADD FOREIGN KEY (`Id`) REFERENCES nhan_vien(`GV_ID`);
-
-# CASCADE
-drop table departments;
-CREATE TABLE departments
-( department_id INTEGER PRIMARY KEY AUTOINCREMENT,
-  department_name VARCHAR
-);
-
-drop table employees;
-CREATE TABLE employees
-( employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
-  last_name VARCHAR NOT NULL,
-  first_name VARCHAR,
-  department_id INTEGER,
-  CONSTRAINT fk_departments
-    FOREIGN KEY (department_id)
-    REFERENCES departments(department_id)
-    ON DELETE CASCADE
-);
-
-INSERT INTO departments VALUES (30, 'HR');
-INSERT INTO departments VALUES (999, 'Sales');
-
-INSERT INTO employees VALUES (10000, 'Smith', 'John', 30);
-INSERT INTO employees VALUES (10001, 'Anderson', 'Dave', 999);
-
-select * from employees;
-select * from departments;
-PRAGMA foreign_keys=on;
-
-delete from departments where department_id == 30;
-select * from employees;
-
-#cout
-      cout << setw(40) << left  << (firstName + " " + lastName) << " "
-           << setw(6)  << right << finalExam << " "
-           << setw(6)  << right << fixed << setprecision(2) << finalAvg << " "
-           << setw(7)  << right << letterGrade << "\n";

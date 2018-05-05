@@ -1,6 +1,7 @@
 #include<header.h>
 
-void login(int * is_exit){
+int login(){
+  cout << "\033[2J\033[1;1H";
   string user_name;
   string password;
   cout<< "User Name:";
@@ -12,23 +13,23 @@ void login(int * is_exit){
 
   if(s == "admin"){
     cout<< "ADMIN"<< endl;
-    admin_func(is_exit);
+    return admin_func();
   }
-  else if (s == "teacher") {
+  if (s == "teacher") {
     cout<< "TEACHER"<< endl;
-    teacher_func(is_exit);
+    return teacher_func(user_name);
   }
-  else if (s == "student") {
+  if (s == "student") {
     cout<< "STUDENT"<< endl;
-    student_func(is_exit);
+    return student_func(user_name);
   }
-  else{
-    string ans;
-    printf("Login Failed\nContinue ? Y/N \n");
-    cin>> ans;
-    // if (cin.get() == '\n'){
-    if (ans != "Y" && ans !="y") {
-      *is_exit = 1;
-    }
+
+  string ans;
+  printf("Login Failed\nContinue ? Y/N \n");
+  cin>> ans;
+  // if (cin.get() == '\n'){
+  if (ans != "Y" && ans !="y") {
+    return 1;
   }
+    return 0;
 }

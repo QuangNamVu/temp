@@ -1,0 +1,12 @@
+* administrator
+   | show user              | user        |
+   | show all teacher       | [st] [sf]   |
+   | show all student       | [st] [sf]   |
+   | search teacher by name | [stn] [sfn] |
+   | search student by name | [ssn]       |
+   | add  teacher           | [at] [af]   |
+   | add  student           | [as]        |
+
+
+
+
