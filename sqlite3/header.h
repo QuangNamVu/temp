@@ -6,11 +6,19 @@
 /* #include <conio.h> */
 using namespace std;
 //g++ -o test2 test2.cpp -lsqlite3
+/* int insert_user(string user_name, string password, string type); */
+/* int delete_user(string user_name); */
+/* int add_teacher(string user_name, string name, string dob); */
+/* int add_student(string user_name, string name, string dob); */
 
+/* int delete_teacher(string user_name); */
+/* int delete_student(string user_name); */
 
-int import();
+/* void delete_all_table(); */
 
-void add_user(string user_name, string password, string type);
+/* void delete_multi_student(); */
+/* int import(); */
+/* void add_user(string user_name, string password, string type); */
 
 string quotesql(const string& s);
 string * split_space(int * size );
@@ -29,20 +37,10 @@ void update_condition(string table_name, string att, int value, string condition
 
 
 string * select_all(string table);
-
 string * select_like(string table, string att, string keyword);
-
-int insert_user(string user_name, string password, string type);
-int add_teacher(string user_name, string name, string dob);
-int add_student(string user_name, string name, string dob);
-
-int delete_user(string user_name);
-int delete_teacher(string user_name);
-int delete_student(string user_name);
-
-void delete_all_table();
-
-void delete_multi_student();
+string * select_search (string table, string att, string keyword);
+string * select_where (string table, string condition);
 
 void display_student_user(string user_name);
 void display_teacher_user(string user_name);
+

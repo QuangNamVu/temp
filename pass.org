@@ -1,3 +1,21 @@
+* GVCGit
+192.168.1.9/GVCgit/vehicle.git
+vqnam
+in vehicle
+* spotify
+doan
+spotify1
+* cousera
+vqnam
+cou0
+* redmine
+http://192.168.1.9:81/redmine/
+vqnam
+redmine1
+* stackoverflow
+id: 9701311
+vqnam
+stack1
 * slack
 vqnam
 slack1
@@ -14,7 +32,7 @@ steam1
 doanvuong2008@gmail
 lol1
 * Tool design UI cho app online:
-https://www.fluidui.com/editor/live/
+  https://www.fluidui.com/editor/live/
   https://marvelapp.com/
 * draw online
   https://vectr.com/doanvuong/akFzWGKzm

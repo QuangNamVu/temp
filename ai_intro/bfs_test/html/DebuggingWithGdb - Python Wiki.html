@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,nofollow">
+
+<title>DebuggingWithGdb - Python Wiki</title>
+<script type="text/javascript" src="DebuggingWithGdb%20-%20Python%20Wiki_files/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="DebuggingWithGdb%20-%20Python%20Wiki_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="DebuggingWithGdb%20-%20Python%20Wiki_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="DebuggingWithGdb%20-%20Python%20Wiki_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="DebuggingWithGdb%20-%20Python%20Wiki_files/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/europython/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="Python Wiki: DebuggingWithGdb" href="https://wiki.python.org/moin/DebuggingWithGdb?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=DebuggingWithGdb&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="https://wiki.python.org/moin/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.python.org/moin/DebuggingWithGdb?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.python.org/moin/DebuggingWithGdb?action=print">
+<link rel="Search" href="https://wiki.python.org/moin/FindPage">
+<link rel="Index" href="https://wiki.python.org/moin/TitleIndex">
+<link rel="Glossary" href="https://wiki.python.org/moin/WordIndex">
+<link rel="Help" href="https://wiki.python.org/moin/HelpOnFormatting">
+</head>
+
+<body dir="ltr" lang="en">
+
+<div id="header">
+
+<form id="searchform" method="get" action="/moin/DebuggingWithGdb">
+<div>
+<input name="action" value="fullsearch" type="hidden">
+<input name="context" value="180" type="hidden">
+<label for="searchinput" style="display: none;">Search:</label>
+<input id="searchinput" name="value" value="Search" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" class="disabled" type="text">
+<input id="titlesearch" name="titlesearch" value="Titles" alt="Search Titles" disabled="disabled" type="submit">
+<input id="fullsearch" name="fullsearch" value="Text" alt="Search Full Text" disabled="disabled" type="submit">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="https://wiki.python.org/moin/FrontPage"></a><a href="http://www.python.org/"><img src="DebuggingWithGdb%20-%20Python%20Wiki_files/python-logo.gif" alt="Python"></a><a name="logo"></a></div>
+<div id="locationline">
+
+
+<ul id="pagelocation">
+<li><a href="https://wiki.python.org/moin/DebuggingWithGdb">DebuggingWithGdb</a></li>
+</ul>
+
+</div>
+
+<ul id="pagetrail">
+<li><a href="https://wiki.python.org/moin/DebuggingWithGdb">DebuggingWithGdb</a></li>
+</ul>
+</div>
+
+<div id="sidebar">
+<div id="star">
+
+</div>
+<div class="sidepanel">
+
+<ul id="navibar">
+<li class="wikilink"><a href="https://wiki.python.org/moin/FrontPage">FrontPage</a></li><li class="wikilink"><a href="https://wiki.python.org/moin/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="https://wiki.python.org/moin/FindPage">FindPage</a></li><li class="wikilink"><a href="https://wiki.python.org/moin/HelpContents">HelpContents</a></li><li class="current"><a href="https://wiki.python.org/moin/DebuggingWithGdb">DebuggingWithGdb</a></li>
+</ul>
+
+</div>
+<div class="sidepanel">
+<h1>Page</h1>
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/moin/DebuggingWithGdb?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/moin/DebuggingWithGdb?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/moin/DebuggingWithGdb">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show" selected="selected">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+<div class="sidepanel">
+<h1>User</h1>
+<ul id="username"><li><a href="https://wiki.python.org/moin/DebuggingWithGdb?action=login" id="login" rel="nofollow">Login</a></li></ul>
+</div>
+</div>
+
+<div id="page" dir="ltr" lang="en">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line874">There are types of bugs that are difficult to debug from within Python: <span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span></p><ul><li>segfaults (not uncaught Python exceptions) <span class="anchor" id="line-4"></span></li><li><p class="line862">hung processes (in cases where you can't get a Python traceback or debug with <tt>pdb</tt>) <span class="anchor" id="line-5"></span></p></li><li>out of control daemon processes <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span></li></ul><p class="line862">In these cases, you can try <tt>gdb</tt>. <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span></p><p class="line867">
+</p><h2 id="Prerequisites">Prerequisites</h2>
+<span class="anchor" id="line-10"></span><p class="line862">You need to have <tt class="backtick">gdb</tt>
+ on your system and Python debugging extensions. Extensions package 
+includes debugging symbols and adds Python-specific commands into <tt class="backtick">gdb</tt>.  On a modern Linux system, you can easily install these with: <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span></p><p class="line874">Fedora: <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span></p><ul><li style="list-style-type:none"><p class="line891"><tt>sudo&nbsp;yum&nbsp;install&nbsp;gdb&nbsp;python-debuginfo</tt> <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></p></li></ul><p class="line874">Ubuntu: <span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span></p><ul><li style="list-style-type:none"><p class="line891"><tt>sudo&nbsp;apt-get&nbsp;install&nbsp;gdb&nbsp;python2.7-dbg</tt> <span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span></p></li></ul><p class="line874">Centos*: <span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span></p><ul><li style="list-style-type:none"><p class="line891"><tt>sudo&nbsp;yum&nbsp;install&nbsp;yum-utils</tt> <span class="anchor" id="line-23"></span></p></li><li style="list-style-type:none"><p class="line891"><tt>sudo&nbsp;debuginfo-install&nbsp;glibc</tt> <span class="anchor" id="line-24"></span></p></li><li style="list-style-type:none"><p class="line891"><tt>sudo&nbsp;yum&nbsp;install&nbsp;gdb&nbsp;python-debuginfo</tt> <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span></p></li></ul><p class="line867">
+</p><h5 id="A.2A_tested_on_Centos_7._python-debuginfo_is_installable_after_the_first_two_commands.">* tested on Centos 7. python-debuginfo is installable after the first two commands.</h5>
+<span class="anchor" id="line-27"></span><p class="line862">For <tt class="backtick">gdb</tt> support on legacy systems, look at the end of this page. <span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span></p><p class="line867">
+</p><h2 id="Running_with_.60gdb.60">Running with `gdb`</h2>
+<span class="anchor" id="line-30"></span><p class="line874">There are two possible ways: <span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span></p><ol type="1"><li><p class="line862">run python under <tt class="backtick">gdb</tt>
+ from the start. Note: the python executable needs to have debug symbols
+ in it which may be another exe python2.7-dbg depending on your system <span class="anchor" id="line-33"></span></p></li><li>attach to already running python process <span class="anchor" id="line-34"></span><span class="anchor" id="line-35"></span></li></ol><p class="line862">To run python under <tt>gdb</tt> there are also two ways. <span class="anchor" id="line-36"></span><span class="anchor" id="line-37"></span></p><p class="line874">Interactive: <span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span><pre><span class="anchor" id="line-1"></span>$ gdb python
+<span class="anchor" id="line-2"></span>...
+<span class="anchor" id="line-3"></span>(gdb) run &lt;programname&gt;.py &lt;arguments&gt;</pre><span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span></li></ul><p class="line874">Automatic: <span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><pre><span class="anchor" id="line-1-1"></span>$ gdb -ex r --args python &lt;programname&gt;.py &lt;arguments&gt;</pre><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span></li></ul><p class="line874">This will run the program til it exits, segfaults or you manually stop execution (using Ctrl+C). <span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span></p><p class="line874">If the process is already running, you can attach to it provided you know the process ID. <span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><pre><span class="anchor" id="line-1-2"></span>$ gdb python &lt;pid of running process&gt;</pre><span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span></li></ul><p class="line862">Attaching to a running process like this will cause it to stop.  You can tell it to continue running with <tt class="backtick">c</tt> command. <span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span></p><p class="line867">
+</p><h2 id="Debugging_process">Debugging process</h2>
+<span class="anchor" id="line-62"></span><p class="line862">If your program segfaulted, <tt class="backtick">gdb</tt> will automatically pause the program, so you can switch into <tt class="backtick">gdb</tt> console to inspect its state. You can also manually interrupt program execution by pressing Ctrl+C in the console. <span class="anchor" id="line-63"></span><span class="anchor" id="line-64"></span></p><p class="line862">See the page <a class="https" href="https://fedoraproject.org/wiki/Features/EasierPythonDebugging">EasierPythonDebugging</a> for the list of Python helper commands for <tt class="backtick">gdb</tt>. <span class="anchor" id="line-65"></span><span class="anchor" id="line-66"></span></p><p class="line867">
+</p><h3 id="Getting_a_C_Stack_Trace">Getting a C Stack Trace</h3>
+<span class="anchor" id="line-67"></span><p class="line874">If you are debugging a segfault, this is probably the first thing you want to do. <span class="anchor" id="line-68"></span><span class="anchor" id="line-69"></span></p><p class="line862">At the <tt>(gdb)</tt> prompt, just run the following command: <span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span><pre><span class="anchor" id="line-1-3"></span>(gdb) bt
+<span class="anchor" id="line-2-1"></span>#0  0x0000002a95b3b705 in raise () from /lib/libc.so.6
+<span class="anchor" id="line-3-1"></span>#1  0x0000002a95b3ce8e in abort () from /lib/libc.so.6
+<span class="anchor" id="line-4"></span>#2  0x00000000004c164f in posix_abort (self=0x0, noargs=0x0)
+<span class="anchor" id="line-5"></span>    at ../Modules/posixmodule.c:7158
+<span class="anchor" id="line-6"></span>#3  0x0000000000489fac in call_function (pp_stack=0x7fbffff110, oparg=0)
+<span class="anchor" id="line-7"></span>    at ../Python/ceval.c:3531
+<span class="anchor" id="line-8"></span>#4  0x0000000000485fc2 in PyEval_EvalFrame (f=0x66ccd8)
+<span class="anchor" id="line-9"></span>    at ../Python/ceval.c:2163
+<span class="anchor" id="line-10"></span>...</pre><span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span></li></ul><p class="line874">With
+ luck, this will give some idea of where the problem is occurring and if
+ it doesn't help you fix the problem, it can help someone else track 
+down the problem. <span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span></p><p class="line874">The quality of the results will depend greatly on the amount of debug information available. <span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span></p><p class="line867">
+</p><h3 id="Getting_a_Python_Stack_Trace">Getting a Python Stack Trace</h3>
+<span class="anchor" id="line-89"></span><p class="line874">If you have Python extensions installed, you can enter: <span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><pre><span class="anchor" id="line-1-4"></span>(gdb) py-bt</pre><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span></li></ul><p class="line874">to get stack trace with familiar Python source code. <span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span></p><p class="line867">
+</p><h3 id="Working_With_Hung_Processes">Working With Hung Processes</h3>
+<span class="anchor" id="line-98"></span><p class="line874">If a process
+ appears hung, it will either be waiting on something (a lock, IO, etc),
+ or be in a busy loop somewhere.  In either case, attaching to the 
+process and getting a back trace can help. <span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span></p><p class="line862">If the process is in a busy loop, you may want to continue execution for a bit (using the <tt>cont</tt> command), then break (Ctrl+C) again and bring up a stack trace. <span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span></p><p class="line874">If the hang occurs in some thread, the following commands may be handy: <span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><pre><span class="anchor" id="line-1-5"></span>(gdb) info threads
+<span class="anchor" id="line-2-2"></span>  Id   Target Id         Frame
+<span class="anchor" id="line-3-2"></span>  37   Thread 0xa29feb40 (LWP 17914) "NotificationThr" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-4-1"></span>  36   Thread 0xa03fcb40 (LWP 17913) "python2.7" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-5-1"></span>  35   Thread 0xa0bfdb40 (LWP 17911) "QProcessManager" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-6-1"></span>  34   Thread 0xa13feb40 (LWP 17910) "python2.7" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-7-1"></span>  33   Thread 0xa1bffb40 (LWP 17909) "python2.7" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-8-1"></span>  31   Thread 0xa31ffb40 (LWP 17907) "QFileInfoGather" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-9-1"></span>  30   Thread 0xa3fdfb40 (LWP 17906) "QInotifyFileSys" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-10-1"></span>  29   Thread 0xa481cb40 (LWP 17905) "QFileInfoGather" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-11"></span>  7    Thread 0xa508db40 (LWP 17883) "QThread" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-12"></span>  6    Thread 0xa5cebb40 (LWP 17882) "python2.7" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-13"></span>  5    Thread 0xa660cb40 (LWP 17881) "python2.7" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-14"></span>  3    Thread 0xabdffb40 (LWP 17876) "gdbus" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-15"></span>  2    Thread 0xac7b7b40 (LWP 17875) "dconf worker" 0xb7fdd424 in __kernel_vsyscall ()
+<span class="anchor" id="line-16"></span>* 1    Thread 0xb7d876c0 (LWP 17863) "python2.7" 0xb7fdd424 in __kernel_vsyscall ()</pre><span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span></li></ul><p class="line862">Current thread is marked with <tt class="backtick">*</tt>. To see where it is in Python code, use <tt class="backtick">py-list</tt>: <span class="anchor" id="line-124"></span><span class="anchor" id="line-125"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span><span class="anchor" id="line-130"></span><span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span><span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span><span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span><pre><span class="anchor" id="line-1-6"></span>(gdb) py-list
+<span class="anchor" id="line-2-3"></span>2025        # Open external files with our Mac app
+<span class="anchor" id="line-3-3"></span>2026        if sys.platform == "darwin" and 'Spyder.app' in __file__:
+<span class="anchor" id="line-4-2"></span>2027            main.connect(app, SIGNAL('open_external_file(QString)'),
+<span class="anchor" id="line-5-2"></span>2028                         lambda fname: main.open_external_file(fname))
+<span class="anchor" id="line-6-2"></span>2029
+<span class="anchor" id="line-7-2"></span>&gt;2030        app.exec_()
+<span class="anchor" id="line-8-2"></span>2031        return main
+<span class="anchor" id="line-9-2"></span>2032
+<span class="anchor" id="line-10-2"></span>2033
+<span class="anchor" id="line-11-1"></span>2034    def __remove_temp_session():
+<span class="anchor" id="line-12-1"></span>2035        if osp.isfile(TEMP_SESSION_PATH):</pre><span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span></li></ul><p class="line874">To see Python code positions for all threads, use: <span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-143"></span><span class="anchor" id="line-144"></span><span class="anchor" id="line-145"></span><span class="anchor" id="line-146"></span><span class="anchor" id="line-147"></span><span class="anchor" id="line-148"></span><span class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span><span class="anchor" id="line-151"></span><span class="anchor" id="line-152"></span><span class="anchor" id="line-153"></span><span class="anchor" id="line-154"></span><span class="anchor" id="line-155"></span><span class="anchor" id="line-156"></span><span class="anchor" id="line-157"></span><span class="anchor" id="line-158"></span><span class="anchor" id="line-159"></span><span class="anchor" id="line-160"></span><span class="anchor" id="line-161"></span><span class="anchor" id="line-162"></span><span class="anchor" id="line-163"></span><span class="anchor" id="line-164"></span><span class="anchor" id="line-165"></span><span class="anchor" id="line-166"></span><pre><span class="anchor" id="line-1-7"></span>(gdb) thread apply all py-list
+<span class="anchor" id="line-2-4"></span>...
+<span class="anchor" id="line-3-4"></span> 200
+<span class="anchor" id="line-4-3"></span> 201        def accept(self):
+<span class="anchor" id="line-5-3"></span>&gt;202            sock, addr = self._sock.accept()
+<span class="anchor" id="line-6-3"></span> 203            return _socketobject(_sock=sock), addr
+<span class="anchor" id="line-7-3"></span> 204        accept.__doc__ = _realsocket.accept.__doc__
+<span class="anchor" id="line-8-3"></span> 205
+<span class="anchor" id="line-9-3"></span> 206        def dup(self):
+<span class="anchor" id="line-10-3"></span> 207            """dup() -&gt; socket object
+<span class="anchor" id="line-11-2"></span>
+<span class="anchor" id="line-12-2"></span>Thread 35 (Thread 0xa0bfdb40 (LWP 17911)):
+<span class="anchor" id="line-13-1"></span>Unable to locate python frame
+<span class="anchor" id="line-14-1"></span>
+<span class="anchor" id="line-15-1"></span>Thread 34 (Thread 0xa13feb40 (LWP 17910)):
+<span class="anchor" id="line-16-1"></span> 197            for method in _delegate_methods:
+<span class="anchor" id="line-17"></span> 198                setattr(self, method, dummy)
+<span class="anchor" id="line-18"></span> 199        close.__doc__ = _realsocket.close.__doc__
+<span class="anchor" id="line-19"></span> 200
+<span class="anchor" id="line-20"></span> 201        def accept(self):
+<span class="anchor" id="line-21"></span>&gt;202            sock, addr = self._sock.accept()
+<span class="anchor" id="line-22"></span> 203            return _socketobject(_sock=sock), addr
+<span class="anchor" id="line-23"></span>...</pre><span class="anchor" id="line-167"></span><span class="anchor" id="line-168"></span></li></ul><p class="line867">
+</p><h2 id="References">References</h2>
+<span class="anchor" id="line-169"></span><ul><li><p class="line891"><a class="http" href="http://fedoraproject.org/wiki/Features/EasierPythonDebugging">http://fedoraproject.org/wiki/Features/EasierPythonDebugging</a> <span class="anchor" id="line-170"></span></p></li><li><p class="line891"><a class="https" href="https://github.com/spyder-ide/spyder/wiki/How-to-debug-Spyder-deadlock-freeze-hang">https://github.com/spyder-ide/spyder/wiki/How-to-debug-Spyder-deadlock-freeze-hang</a> <span class="anchor" id="line-171"></span><span class="anchor" id="line-172"></span></p></li></ul><p class="line867">
+</p><h2 id="GDB_on_Legacy_systems">GDB on Legacy systems</h2>
+<span class="anchor" id="line-173"></span><p class="line862">It may happen that you need to use <tt class="backtick">gdb</tt> on a legacy system without advanced Python support. In this case you may find the following information useful. <span class="anchor" id="line-174"></span><span class="anchor" id="line-175"></span></p><p class="line867">
+</p><h4 id="GDB_Macros">GDB Macros</h4>
+<span class="anchor" id="line-176"></span><p class="line862">A set of 
+GDB macros are distributed with Python that aid in debugging the Python 
+process.  You can install them by adding the contents of <tt class="backtick">Misc/gdbinit</tt> in the Python sources to <tt class="backtick">~/.gdbinit</tt> -- or copy it <a class="http" href="http://svn.python.org/view/python/branches/release27-maint/Misc/gdbinit?view=log">from Subversion</a>.  Be sure to use the correct version for your version of Python or some features will not work. <span class="anchor" id="line-177"></span><span class="anchor" id="line-178"></span></p><p class="line874">Note that the new GDB commands this file adds will only work correctly if debugging symbols are available. <span class="anchor" id="line-179"></span><span class="anchor" id="line-180"></span></p><p class="line862">Depending on how you've compiled Python, some calls may have had their frame pointers (i.e. <tt>$fp</tt> in GDB) optimised away, which means GDB won't have access to local variables like <tt>co</tt> that can be inspected for Python callstack information. For example, if you compile using <tt>-g&nbsp;-O3</tt>
+ using GCC 4.1, then this occurs. Similarly, with gcc 4.5.2 on Ubuntu 
+(at least) the macros fail for the same reason. The usual symptom is 
+that you'll see the <strong>call_function</strong> routine appearing to be between <strong><a class="nonexistent" href="https://wiki.python.org/moin/PyEval">PyEval</a>_<a class="nonexistent" href="https://wiki.python.org/moin/EvalFrameEx">EvalFrameEx</a></strong> and <strong><a class="nonexistent" href="https://wiki.python.org/moin/PyEval">PyEval</a>_<a class="nonexistent" href="https://wiki.python.org/moin/EvalCodeEx">EvalCodeEx</a></strong>, and the macro failing with <strong>No symbol "co" in current context.</strong>.  There are two work-arounds for the issue: <span class="anchor" id="line-181"></span><span class="anchor" id="line-182"></span></p><ul><li><p class="line862">Recompiling python with <strong>make "CFLAGS=-g -fno-inline -fno-strict-aliasing"</strong> solves this problem. <span class="anchor" id="line-183"></span></p></li><li><p class="line862">Patching the conditionals for Python frames in the pystack and pystackv routines to ignore frames with where <tt>$fp</tt> is 0, like so: <span class="anchor" id="line-184"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-185"></span><span class="anchor" id="line-186"></span><span class="anchor" id="line-187"></span><pre><span class="anchor" id="line-1-8"></span>    &lt;&lt;&lt;&lt;         if $pc &gt; PyEval_EvalFrameEx &amp;&amp; $pc &lt; PyEval_EvalCodeEx
+<span class="anchor" id="line-2-5"></span>    &gt;&gt;&gt;&gt;         if $pc &gt; PyEval_EvalFrameEx &amp;&amp; $pc &lt; PyEval_EvalCodeEx &amp;&amp; $fp != 0</pre><span class="anchor" id="line-188"></span><span class="anchor" id="line-189"></span></li></ul></li></ul><p class="line862">Also note that the stop condition for the while-loops in the <tt>pystack</tt> and <tt>pystackv</tt>
+ routines were originally designed for the case where you're running the
+ Python interpreter directly, and not running the interpreter withing 
+another program (by loading the shared library and manually 
+bootstrapping the interpreter). So you may need to tweak the while-loops
+ depending on the program you're intending to debug. See, for example, <a class="http" href="http://stackoverflow.com/questions/22856807/stop-condition-for-stack-tracing-in-legacy-gdb-script">this StackOverflow post</a> for another (putative) stop condition. <span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span></p><p class="line867">
+</p><h4 id="Getting_Python_Stack_Traces_With_GDB_Macros">Getting Python Stack Traces With GDB Macros</h4>
+<span class="anchor" id="line-192"></span><p class="line874">At the gdb prompt, you can get a Python stack trace: <span class="anchor" id="line-193"></span><span class="anchor" id="line-194"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-195"></span><span class="anchor" id="line-196"></span><pre><span class="anchor" id="line-1-9"></span>(gdb) pystack</pre><span class="anchor" id="line-197"></span><span class="anchor" id="line-198"></span></li></ul><p class="line874">Alternatively, you can get a list of the Python locals along with each stack frame: <span class="anchor" id="line-199"></span><span class="anchor" id="line-200"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-201"></span><span class="anchor" id="line-202"></span><pre><span class="anchor" id="line-1-10"></span>(gdb) pystackv</pre><span class="anchor" id="line-203"></span><span class="anchor" id="line-204"></span></li></ul><p class="line867">
+</p><h4 id="More_useful_macros_not_in_python.27s_gdbinit_file">More useful macros not in python's gdbinit file</h4>
+<span class="anchor" id="line-205"></span><p class="line862">See <a class="http" href="http://web.archive.org/web/20070915134837/http://www.mashebali.com/?Python_GDB_macros:The_Macros">http://web.archive.org/web/20070915134837/http://www.mashebali.com/?Python_GDB_macros:The_Macros</a> for some more handy python gdb macros. <span class="anchor" id="line-206"></span><span class="anchor" id="bottom"></span></p></div><p id="pageinfo" class="info" dir="ltr" lang="en">DebuggingWithGdb  (last edited 2017-08-07 20:12:04 by <span title="Maximilian Fuxjäger @ 62-46-157-129.adsl.highway.telekom.at[62.46.157.129]"><a href="https://wiki.python.org/moin/MaximilianFuxjaeger" title="Maximilian Fuxjäger @ 62-46-157-129.adsl.highway.telekom.at[62.46.157.129]">MaximilianFuxjaeger</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+<p style="text-align: center; font-size: 85%"><a href="https://wiki.python.org/moin/FrontPage#use">Unable to edit the page? See the FrontPage for instructions.</a></p>
+
+
+</body></html>

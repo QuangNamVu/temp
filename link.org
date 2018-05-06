@@ -1,5 +1,8 @@
+* paper
+  https://www.sciencedirect.com/
+  https://sci-hub.tw/
 * firefox auth
-http://detectportal.firefox.com/success.txt
+  http://detectportal.firefox.com/success.txt
 * spacemacs
 0.200.13@25.3.1
 * 

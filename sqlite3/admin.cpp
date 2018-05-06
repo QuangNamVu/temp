@@ -34,6 +34,9 @@ void help(){
   cout << "* Delete User"<< endl;
   cout << "├── Delete Faculty         [df]  [dt]  [4 1]"<< endl;
   cout << "└── Delete Student         [ds]        [4 2]"<< endl<<endl;
+  cout << "* Delete User"<< endl;
+  cout << "├── Delete Faculty         [df]  [dt]  [4 1]"<< endl;
+  cout << "└── Delete Student         [ds]        [4 2]"<< endl<<endl;
   cout << "--------------------------------------------"<< endl;
   std::cout << "Press enter to continue..."<< endl;
   std::cin.ignore(1024, '\n');
@@ -102,6 +105,36 @@ int insert_user(string user_name, string password, string type){
   else{
     printf("Create user %s success \n", user_name.c_str());
   }
+  sqlite3_finalize(stmt);
+  sqlite3_close(db);
+  return rc;
+}
+
+int delete_user(string user_name){
+  if(user_name == "admin"){
+    cout<< "CANNOT DELETE ADMIN";
+    return -1;
+  }
+  sqlite3 *db;
+  int rc;
+  sqlite3_stmt * stmt;
+
+  string sqlstatement = "delete from user where USER_NAME == " + quotesql(user_name) + ";" ;
+
+  if (sqlite3_open("test.db", &db) != SQLITE_OK)
+	{
+      cout << "Failed to open db\n";
+      sqlite3_finalize(stmt);
+      sqlite3_close(db);
+      return sqlite3_open("test.db", &db);
+	}
+
+  sqlite3_prepare_v2( db, sqlstatement.c_str(), -1, &stmt, NULL );
+  rc = sqlite3_step(stmt );
+
+  if(rc != SQLITE_DONE)
+    printf("CANNOT DELETE TEACHER %s\n", user_name.c_str());
+
   sqlite3_finalize(stmt);
   sqlite3_close(db);
   return rc;
@@ -262,36 +295,6 @@ void delete_multi_student(){
   for (int i = 0; i < n; ++i) {
     delete_student(list_option_delete[i]);
   }
-}
-
-int delete_user(string user_name){
-  if(user_name == "admin"){
-    cout<< "CANNOT DELETE ADMIN";
-    return -1;
-  }
-  sqlite3 *db;
-  int rc;
-  sqlite3_stmt * stmt;
-
-  string sqlstatement = "delete from user where USER_NAME == " + quotesql(user_name) + ";" ;
-
-  if (sqlite3_open("test.db", &db) != SQLITE_OK)
-	{
-      cout << "Failed to open db\n";
-      sqlite3_finalize(stmt);
-      sqlite3_close(db);
-      return sqlite3_open("test.db", &db);
-	}
-
-  sqlite3_prepare_v2( db, sqlstatement.c_str(), -1, &stmt, NULL );
-  rc = sqlite3_step(stmt );
-
-  if(rc != SQLITE_DONE)
-    printf("CANNOT DELETE TEACHER %s\n", user_name.c_str());
-
-  sqlite3_finalize(stmt);
-  sqlite3_close(db);
-  return rc;
 }
 
 int admin_func(){

@@ -1,0 +1,6 @@
+* link
+** book
+http://gen.lib.rus.ec/
+
+* install portable
+tar -xvJf tor-browser-linux64-7.5_LANG.tar.xz

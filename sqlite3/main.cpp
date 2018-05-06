@@ -14,7 +14,13 @@ int main(int argc, char* argv[]) {
 
   // admin_func();
 
-  teacher_func("t1");
+  teacher_func("S1951");
+
+  // cout <<query_select("*","object","GV_ID == "+ quotesql("t"));
+  // cout <<query_select("*","student","1 ");
+
+
+  // teacher_func("t");
   // select_all("teacher");
 
   // delete_multi_student();
