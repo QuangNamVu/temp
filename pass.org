@@ -1,7 +1,10 @@
+* onlinejudge
+  vu quang nam
+  onlinejudge 1 0
 * GVCGit
-192.168.1.9/GVCgit/vehicle.git
-vqnam
-in vehicle
+  192.168.1.9/GVCgit/vehicle.git
+  vqnam
+  in vehicle
 * spotify
 doan
 spotify1
