@@ -1,9 +1,13 @@
+* codeforces
+coc_vu
+codeforces 1 0
 * onlinejudge
   vu quang nam
   onlinejudge 1 0
+  113.161.64.129
 * GVCGit
   192.168.1.9/GVCgit/vehicle.git
-  vqnam
+  vqn
   in vehicle
 * spotify
 doan
