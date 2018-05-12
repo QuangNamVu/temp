@@ -1,3 +1,11 @@
+* anyDesk
+gvc-hp-workstation@ad
+
+* Rasberry
+ssh pi@192.168.137.163
+Toiyeu8438626
+* Team
+811062414
 * codeforces
 coc_vu
 codeforces 1 0
