@@ -1,87 +1,323 @@
-* x
-  brutally
-po
-  embrace
-  speck
-  upstanding
-sago
-  grave
-obscure
-stem
-  resample
-  nape
-  demmand
-  semifinal
-  dealt
-  alike
-  convince
-  persuade 
-curious
-observation
-  fortress
-  devout
-  trend
-  insecure
-  fountain
-  mutant
-  light
-  3d viewer in linux
-  cay co ngot
-  collaborator
-  tremor
-  censure
-  spree
-  snip 
-  snoutbook
-  restrain
-  gras
-  foie
-  cage
-  insemination
-  pull lever toilet
-  dove
-  condominium
-  sự nhiễm điện electrization
-  shuffling
-  interrupt
-  corrupt
-  replication
-  dodge
-  sleeker
-  drill
-  fetch
-  neck
-  hannibal
-  descendant
-  rate
-  explicit
-  hardcore
-  roam
-  loot
-  banner
-  contact
-  certification
-  roam
-regular
-* urban
-  | mb       | my bad                      |
-  | FYI      | For Your Information        |
-  | macro    | phoi hop dong doi           |
-  | XD       | laughing face               |
-  | smurf    | play low account            |
-  | idk      | i dont know                 |
-  | tk       | thank you                   |
-  | debut    | first performance           |
-  | nvm      | never mind                  |
-  | ggwp     | good game well play         |
-  | lmfao    | Laughing my fucking ass off |
-  | town-rat | person bumming              |
-* Thanh ngu
-  http://tienganh.elight.edu.vn/105-thanh-ngu-tieng-anh-thong-dung/
-  | bring on the table        |                   |
-  | like father like son      |                   |
-  | go big or go home         |                   |
-  | Get an installment buying | mua trả góp       |
-  | rolling-release           | cập nhật liên tục |
+* Step
+** into
+   lam vao hoan canh
+** in
+   buoc' vao`, can thiep. vao
+   take the step in matter: co bien phap de giai quyet van de
+** out
+   buoc' ra khoi? phong` 1 lat', di den' cho~ hen. ho`
+** up
+   day? manh
+** down
+* ?
+  cheque prn
+  affordable
+  look upon
+  sustain
+  algorithm spell
+  ball park
+  holding up your trade
+  have no choice but to
 
-  Break the news: Thông báo
+* AI and machine learning
+** ROI
+   region of interest
+* x
+** jog
+lac' nhe.
+** jogging
+chay. bo.
+we must be jogging : len duong` thoi
+** hike
+di bo. duong dai` hanh` quan
+** introduce
+gioi' thieu. lam` quen
+introduce it into their daily routine
+** comment
+chu' thich' , dan~ giai? chi? trich'
+comment on (upon) sb's behavior
+phe^ binh` nguoi` nao`
+** reinforce
+tang cuong`, cung? co;
+** attend
+su. tham gia co' mat.
+** procedure
+thu? tuc. luat. phap'
+** appreciate
+appreciation danh gia cao, hieu ro~
+have an appreciation of music
+** substantial
+co' thuc.
+chac' chan'
+substantial cheque
+** initiative
+quyen de xuong, co quyen sang kien the chu dong 
+** clerical
+cong viec bien chep' van phong
+clerical staff
+** shortage
+thieu'
+a shortage of 100 tons thieu' 100 tan'
+** stock
+kho du. tru~, co? phan chung' khoan'
+** recoup
+   recoup one self : duoc tra lai. khoan? da~ tieu
+   boi thuong
+** recur
+lap. lai
+that such mistakes should never recur
+** grants
+  giao cho , tro. cap'
+** haul
+   mon' lai~
+** credit 
+   tin dung, cho vay, mua chiu., long` tin
+** agency
+   su moi gioi'
+** overhauled
+   xem xet' kiem tra duoi? kip.
+** by myself = on my own
+** spree
+   vui choi miet mai, che` chen'
+** try sb hand
+** try the eye
+   lam moi mat
+   small print try the eye
+** try sb strength
+   thu? suc'
+** buy up
+   mua sach., mua het'
+** buy over
+   mua chuoc, dut lot
+** fed up with
+   chan ngay'
+** on strike
+   dinh cong 
+** elections
+   cuoc tuyen cu, su bay cu
+   su lua chon len thien dang
+*** general elections
+    tong tuyen cu 
+** stand 
+   dau tranh
+** attracting
+   thu hut
+** takeover
+   thu mua cong ty 
+** suffer = bare with
+   .p g.wm
+** associated
+   lien ket
+** stance
+   thai do,lap truong
+** snowflake
+   hoa tuyet
+** specific
+   rieng biet, dut khoat, ro rang
+** specified
+   theo ly thuyet , danh nghia
+** regular expression
+   bieu thuc chinh quy
+** elevator
+   thang may
+** alligator
+   ca sau'
+** accomplish
+   == finish
+** BLOOPERS
+   roi vao tinh huong kho xu
+** wreck
+   dap pha wrech it ralph
+** aggressive
+   xam luoc gay han
+** stood
+** palace = castle
+   lau dai
+** emerge
+   noi len
+   but as he emerged, 
+** scarlet
+   do
+   scarlet 
+** blazed
+   sang choi
+** stripped
+** domestic
+   noi tro
+** dodge
+** sparkle
+** adultery
+** crater
+   mieng nui lua
+   ho^'
+** mop
+** exploited
+   khai thac
+** infection
+   anh huong nhiem~
+** abide
+   keo dai them
+** shed
+** climate
+   khi hau am ap
+** spanish
+** enslave
+** deviant
+   lac loi
+** deposit.: vat gui
+   The other thing I could do is leave my watch as a deposit.
+** | obliged | biet on |
+   involve
+   certain
+   tasteless.
+   disperse
+   unwilling
+   pose
+   influence
+   philosophy
+   provisioned
+   transaction
+   policy
+   allocation
+   transcendence 
+   Agile
+   disciplines
+   trouser
+   gymnastic
+   castle
+   cattle *
+   nails
+   srew
+   rusty
+   screwdriver
+   screw
+   garbage
+   sequence
+   peel
+   lime
+   dull
+   dump
+   dunce
+   improve
+   clumsy
+   aggressive
+   shallow
+   brutally
+   po
+   embrace
+   speck
+   upstanding
+   sago
+   grave
+   obscure
+   stem
+   resample
+   nape
+   demmand
+   semifinal
+   dealt
+   alike
+   convince
+   persuade 
+   curious
+   observation
+   fortress
+   devout
+   trend
+   insecure
+   fountain
+   mutant
+   light
+   3d viewer in linux
+   collaborator
+   tremor
+   censure
+   spree
+   snip 
+   snoutbook
+   restrain
+   gras
+   foie
+   cage
+   insemination
+   pull lever toilet
+   dove
+   condominium
+   sự nhiễm điện electrization
+   shuffling
+   interrupt
+   corrupt
+   replication
+   dodge
+   sleeker
+   drill
+   fetch
+   neck
+   hannibal
+   descendant
+   rate
+   explicit
+   hardcore
+   roam
+   loot
+   banner
+   contact
+   certification
+   roam
+* urban
+  | mb       | my bad                        |
+  | FYI      | For Your Information          |
+  | macro    | phoi hop dong doi             |
+  | XD       | laughing face                 |
+  | smurf    | play low account              |
+  | idk      | i dont know                   |
+  | tk       | thank you                     |
+  | debut    | first performance             |
+  | nvm      | never mind                    |
+  | ggwp     | good game well play           |
+  | lmfao    | Laughing my fucking ass off   |
+  | town-rat | person bumming                |
+  | ROFL     | Rolling On the Floor Laughing |
+  
+* Thanh ngu
+** for all i care
+   i don't fucking care
+   http://tienganh.elight.edu.vn/105-thanh-ngu-tieng-anh-thong-dung/
+** bring on the table      
+** like father like son
+** go big or go home
+** Get an installment buying
+   mua trả góp
+** rolling-release
+   cập nhật liên tục
+** bear one cross
+** bear in mind
+** bearing on the question
+   lien quan
+** in every form
+   duoi moi hinh thuc
+** think out of the box
+   khong go bo sang tao
+** change for better(worse)
+** Break the news:
+   Thông báo
+** keep her occupied
+   = keep sb busy
+   giu ban ron
+* cum tu
+** rid of
+   thoat' khoi?
+   rid of excessive debt
+** no concern about
+   = dont care about 
+** set out
+   trinh bay
+** hand over
+   giao pho', trao cho
+** One of the + S(s/es)
+   One of the parties mentioned in the original agreement has decided that she does
+   not want to continue with the profit-sharing scheme.
+* sentence
+** I would be most obliged if you ....
+** I can strongly recommend
+   I can strongly recommend this product as the best available on the market today.
