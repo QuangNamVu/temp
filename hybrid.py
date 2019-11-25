@@ -1187,9 +1187,12 @@ class FeatureWriter(object):
             features["end_positions"] = create_int_feature(
                 [feature.end_position])
             impossible = 0
+            is_zl = 0
             if feature.is_impossible:
                 impossible = 1
+                is_zl = 1
             features["is_impossible"] = create_int_feature([impossible])
+            features["is_zl"] = create_int_feature([is_zl])
 
         tf_example = tf.train.Example(
             features=tf.train.Features(feature=features))
