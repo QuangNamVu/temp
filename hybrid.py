@@ -742,7 +742,8 @@ def model_fn_builder(bert_config, zl_num_labels, init_checkpoint, learning_rate,
             end_loss = compute_loss(end_logits, end_positions, is_zl_labels)
 
             squad_loss = (start_loss + end_loss) / 2.0
-            classify_loss = tf.reduce_mean(is_zl_labels * zl_per_example_loss)
+            # classify_loss = tf.reduce_mean(is_zl_labels * zl_per_example_loss)
+            classify_loss = zl_loss
 
             # TODO total_loss add
             alpha = .5
