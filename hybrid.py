@@ -786,8 +786,8 @@ def input_fn_builder(input_file, seq_length, is_training, drop_remainder):
         "input_ids": tf.FixedLenFeature([seq_length], tf.int64),
         "input_mask": tf.FixedLenFeature([seq_length], tf.int64),
         "segment_ids": tf.FixedLenFeature([seq_length], tf.int64),
-        "is_impossible": tf.FixedLenFeature([seq_length], tf.int64),
-        "is_zl": tf.FixedLenFeature([seq_length], tf.int64),
+        "is_impossible": tf.FixedLenFeature([], tf.int64),
+        "is_zl": tf.FixedLenFeature([], tf.int64),
     }
 
     if is_training:
