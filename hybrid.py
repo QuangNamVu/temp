@@ -270,6 +270,8 @@ def read_squad_examples(input_file, is_training):
                 end_position = None
                 orig_answer_text = None
                 is_impossible = False
+                # in case true but not count in loss
+                is_zl = True
                 if is_training:
 
                     if FLAGS.version_2_with_negative:
@@ -613,24 +615,24 @@ def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,
     # return (loss, per_example_loss, logits, probabilities)
 
     # TODO namvq get score in Zalo format
-    output_layer = model.get_pooled_output()
+    classify_output_layer = model.get_pooled_output()
 
-    hidden_size = output_layer.shape[-1].value
+    classify_hidden_size = classify_output_layer.shape[-1].value
 
-    output_weights = tf.get_variable(
-        "output_weights", [num_zl_labels, hidden_size],
+    classify_output_weights = tf.get_variable(
+        "classify_output_weights", [num_zl_labels, classify_hidden_size],
         initializer=tf.truncated_normal_initializer(stddev=0.02))
 
-    output_bias = tf.get_variable(
-        "output_bias", [num_zl_labels], initializer=tf.zeros_initializer())
+    classify_output_bias = tf.get_variable(
+        "classify_output_bias", [num_zl_labels], initializer=tf.zeros_initializer())
 
-    with tf.variable_scope("loss"):
+    with tf.variable_scope("classify_loss"):
         if is_training:
             # I.e., 0.1 dropout
-            output_layer = tf.nn.dropout(output_layer, keep_prob=0.9)
+            classify_output_layer = tf.nn.dropout(classify_output_layer, keep_prob=0.9)
 
-        zl_logits = tf.matmul(output_layer, output_weights, transpose_b=True)
-        zl_logits = tf.nn.bias_add(zl_logits, output_bias)
+        zl_logits = tf.matmul(classify_output_layer, classify_output_weights, transpose_b=True)
+        zl_logits = tf.nn.bias_add(zl_logits, classify_output_bias)
         zl_probabilities = tf.nn.softmax(zl_logits, axis=-1)
         zl_log_probs = tf.nn.log_softmax(zl_logits, axis=-1)
 
