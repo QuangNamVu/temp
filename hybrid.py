@@ -861,7 +861,7 @@ def input_fn_builder(input_file, seq_length, is_training, drop_remainder):
 
 
 RawResult = collections.namedtuple("RawResult",
-                                   ["unique_id", "start_logits", "end_logits","zl_probabilities"])
+                                   ["unique_id", "start_logits", "end_logits", "zl_probabilities"])
 
 
 def write_predictions(all_examples, all_features, all_results, n_best_size,
@@ -881,7 +881,7 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
 
     _PrelimPrediction = collections.namedtuple(  # pylint: disable=invalid-name
         "PrelimPrediction",
-        ["feature_index", "start_index", "end_index", "start_logit", "end_logit"])
+        ["feature_index", "start_index", "end_index", "start_logit", "end_logit", "zl_probabilities"])
 
     all_predictions = collections.OrderedDict()
     all_nbest_json = collections.OrderedDict()
@@ -935,7 +935,8 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
                             start_index=start_index,
                             end_index=end_index,
                             start_logit=result.start_logits[start_index],
-                            end_logit=result.end_logits[end_index]))
+                            end_logit=result.end_logits[end_index],
+                            zl_probabilities=result.zl_probabilities))
 
         if FLAGS.version_2_with_negative:
             prelim_predictions.append(
@@ -944,14 +945,15 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
                     start_index=0,
                     end_index=0,
                     start_logit=null_start_logit,
-                    end_logit=null_end_logit))
+                    end_logit=null_end_logit,
+                    zl_probabilities=result.zl_probabilities))
         prelim_predictions = sorted(
             prelim_predictions,
             key=lambda x: (x.start_logit + x.end_logit),
             reverse=True)
 
         _NbestPrediction = collections.namedtuple(  # pylint: disable=invalid-name
-            "NbestPrediction", ["text", "start_logit", "end_logit","zl_probabilities"])
+            "NbestPrediction", ["text", "start_logit", "end_logit", "zl_probabilities"])
 
         seen_predictions = {}
         nbest = []
@@ -991,7 +993,7 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
                     text=final_text,
                     start_logit=pred.start_logit,
                     end_logit=pred.end_logit,
-                    zl_probabilities=zl_probabilities))
+                    zl_probabilities=pred.zl_probabilities))
 
         # if we didn't inlude the empty option in the n-best, inlcude it
         if FLAGS.version_2_with_negative:
@@ -1000,22 +1002,32 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
                     _NbestPrediction(
                         text="", start_logit=null_start_logit,
                         end_logit=null_end_logit,
-                        zl_probabilities=zl_probabilities))
+                        zl_probabilities=pred.zl_probabilities))
         # In very rare edge cases we could have no valid predictions. So we
         # just create a nonce prediction in this case to avoid failure.
         if not nbest:
             nbest.append(
-                _NbestPrediction(text="empty", start_logit=0.0, end_logit=0.0,zl_probabilities=zl_probabilities))
+                _NbestPrediction(text="empty", start_logit=0.0, end_logit=0.0,zl_probabilities=[-1.0, -1.0]))
 
         assert len(nbest) >= 1
 
         total_scores = []
+        show_enty_list = []
         best_non_null_entry = None
         for entry in nbest:
+            show_enty_list.append(entry)
+            if len(show_enty_list) <10:
+                print(entry)
             total_scores.append(entry.start_logit + entry.end_logit)
             if not best_non_null_entry:
                 if entry.text:
                     best_non_null_entry = entry
+
+        print('------------------------------------------------------')
+        print(best_non_null_entry)
+        if not best_non_null_entry:
+            best_non_null_entry =  _NbestPrediction(text="empty", start_logit=0.0, end_logit=0.0,zl_probabilities=[-1.0, -1.0])
+        print('------------------------------------------------------')
 
         probs = _compute_softmax(total_scores)
 
