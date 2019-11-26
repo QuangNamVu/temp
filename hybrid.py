@@ -28,6 +28,7 @@ import optimization
 import tokenization
 import six
 import tensorflow as tf
+import codecs
 # import tensorflow.compat.v1 as tf
 
 flags = tf.flags
@@ -60,7 +61,7 @@ flags.DEFINE_string(
     "Initial checkpoint (usually from a pre-trained BERT model).")
 
 flags.DEFINE_bool(
-    "do_lower_case", True,
+    "do_lower_case", False,
     "Whether to lower case the input text. Should be True for uncased "
     "models and False for cased models.")
 
@@ -276,11 +277,17 @@ def read_squad_examples(input_file, is_training):
 
                     if FLAGS.version_2_with_negative:
                         is_impossible = qa["is_impossible"]
-                        is_zl = qa["is_zl"]
-                    if (len(qa["answers"]) != 1) and (not is_impossible):
+                        if "is_zl" in qa.keys():
+                            is_zl = qa["is_zl"]
+                        else:
+                            is_zl = 0
+                    
+                    # Luong B tren 1 cau tra loi
+                    if (len(qa["answers"]) != 1) and ((not is_impossible) and (not is_zl)):
                         raise ValueError(
                             "For training, each question should have exactly 1 answer.")
-                    if not is_impossible:
+                    # B
+                    if (not is_impossible) and (not is_zl):
                         answer = qa["answers"][0]
                         orig_answer_text = answer["text"]
                         answer_offset = answer["answer_start"]
@@ -302,6 +309,7 @@ def read_squad_examples(input_file, is_training):
                             tf.logging.warning("Could not find answer: '%s' vs. '%s'",
                                                actual_text, cleaned_answer_text)
                             continue
+                    # case A + A
                     else:
                         start_position = -1
                         end_position = -1
@@ -348,18 +356,28 @@ def convert_examples_to_features(examples, tokenizer, max_seq_length,
 
         tok_start_position = None
         tok_end_position = None
+        # case A + A
         if is_training and example.is_impossible:
             tok_start_position = -1
             tok_end_position = -1
         if is_training and not example.is_impossible:
-            tok_start_position = orig_to_tok_index[example.start_position]
-            if example.end_position < len(example.doc_tokens) - 1:
-                tok_end_position = orig_to_tok_index[example.end_position + 1] - 1
+
+            # Luong B
+            if not example.is_zl:
+                tok_start_position = orig_to_tok_index[example.start_position]
+                if example.end_position < len(example.doc_tokens) - 1:
+                    tok_end_position = orig_to_tok_index[example.end_position + 1] - 1
+                else:
+                    tok_end_position = len(all_doc_tokens) - 1
+                (tok_start_position, tok_end_position) = _improve_answer_span(
+                    all_doc_tokens, tok_start_position, tok_end_position, tokenizer,
+                    example.orig_answer_text)
+            # Luong A
             else:
-                tok_end_position = len(all_doc_tokens) - 1
-            (tok_start_position, tok_end_position) = _improve_answer_span(
-                all_doc_tokens, tok_start_position, tok_end_position, tokenizer,
-                example.orig_answer_text)
+                tok_start_position = -1
+                tok_end_position = -1
+
+            
 
         # The -3 accounts for [CLS], [SEP] and [SEP]
         max_tokens_for_doc = max_seq_length - len(query_tokens) - 3
@@ -424,23 +442,30 @@ def convert_examples_to_features(examples, tokenizer, max_seq_length,
 
             start_position = None
             end_position = None
+            # B
             if is_training and not example.is_impossible:
                 # For training, if our document chunk does not contain an annotation
                 # we throw it out, since there is nothing to predict.
-                doc_start = doc_span.start
-                doc_end = doc_span.start + doc_span.length - 1
-                out_of_span = False
-                if not (tok_start_position >= doc_start and
-                        tok_end_position <= doc_end):
-                    out_of_span = True
-                if out_of_span:
+                # luong B
+                if not example.is_zl:
+                    doc_start = doc_span.start
+                    doc_end = doc_span.start + doc_span.length - 1
+                    out_of_span = False
+                    if not (tok_start_position >= doc_start and
+                            tok_end_position <= doc_end):
+                        out_of_span = True
+                    if out_of_span:
+                        start_position = 0
+                        end_position = 0
+                    else:
+                        doc_offset = len(query_tokens) + 2
+                        start_position = tok_start_position - doc_start + doc_offset
+                        end_position = tok_end_position - doc_start + doc_offset
+                else:
                     start_position = 0
                     end_position = 0
-                else:
-                    doc_offset = len(query_tokens) + 2
-                    start_position = tok_start_position - doc_start + doc_offset
-                    end_position = tok_end_position - doc_start + doc_offset
 
+            # A
             if is_training and example.is_impossible:
                 start_position = 0
                 end_position = 0
@@ -466,12 +491,16 @@ def convert_examples_to_features(examples, tokenizer, max_seq_length,
                 if is_training and example.is_impossible:
                     tf.logging.info("impossible example")
                 if is_training and not example.is_impossible:
-                    answer_text = " ".join(
-                        tokens[start_position:(end_position + 1)])
-                    tf.logging.info("start_position: %d" % (start_position))
-                    tf.logging.info("end_position: %d" % (end_position))
-                    tf.logging.info(
-                        "answer: %s" % (tokenization.printable_text(answer_text)))
+                    if not example.is_zl:
+                        answer_text = " ".join(
+                            tokens[start_position:(end_position + 1)])
+                        tf.logging.info("start_position: %d" % (start_position))
+                        tf.logging.info("end_position: %d" % (end_position))
+                        tf.logging.info(
+                            "answer: %s" % (tokenization.printable_text(answer_text)))
+                    # A
+                    else:
+                        tf.logging.info("possible, but zalo")
 
             feature = InputFeatures(
                 unique_id=unique_id,
@@ -732,8 +761,8 @@ def model_fn_builder(bert_config, zl_num_labels, init_checkpoint, learning_rate,
                 one_hot_positions = tf.one_hot(
                     positions, depth=seq_length, dtype=tf.float32)
                 log_probs = tf.nn.log_softmax(logits, axis=-1)
-                loss = -tf.reduce_mean(
-                    tf.reduce_sum((tf.ones_like(is_zl_labels) - is_zl_labels) * one_hot_positions * log_probs, axis=-1))
+                p = tf.expand_dims((tf.ones_like(is_zl_labels) - is_zl_labels), axis = -1)
+                loss = -tf.reduce_mean(tf.reduce_sum(p * one_hot_positions * log_probs, axis=-1))
                 return loss
 
             # target
@@ -766,6 +795,7 @@ def model_fn_builder(bert_config, zl_num_labels, init_checkpoint, learning_rate,
                 "unique_ids": unique_ids,
                 "start_logits": start_logits,
                 "end_logits": end_logits,
+                "zl_probabilities": zl_probabilities,
             }
             output_spec = tf.contrib.tpu.TPUEstimatorSpec(
                 mode=mode, predictions=predictions, scaffold_fn=scaffold_fn)
@@ -831,7 +861,7 @@ def input_fn_builder(input_file, seq_length, is_training, drop_remainder):
 
 
 RawResult = collections.namedtuple("RawResult",
-                                   ["unique_id", "start_logits", "end_logits"])
+                                   ["unique_id", "start_logits", "end_logits","zl_probabilities"])
 
 
 def write_predictions(all_examples, all_features, all_results, n_best_size,
@@ -921,7 +951,7 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
             reverse=True)
 
         _NbestPrediction = collections.namedtuple(  # pylint: disable=invalid-name
-            "NbestPrediction", ["text", "start_logit", "end_logit"])
+            "NbestPrediction", ["text", "start_logit", "end_logit","zl_probabilities"])
 
         seen_predictions = {}
         nbest = []
@@ -960,7 +990,8 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
                 _NbestPrediction(
                     text=final_text,
                     start_logit=pred.start_logit,
-                    end_logit=pred.end_logit))
+                    end_logit=pred.end_logit,
+                    zl_probabilities=zl_probabilities))
 
         # if we didn't inlude the empty option in the n-best, inlcude it
         if FLAGS.version_2_with_negative:
@@ -968,12 +999,13 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
                 nbest.append(
                     _NbestPrediction(
                         text="", start_logit=null_start_logit,
-                        end_logit=null_end_logit))
+                        end_logit=null_end_logit,
+                        zl_probabilities=zl_probabilities))
         # In very rare edge cases we could have no valid predictions. So we
         # just create a nonce prediction in this case to avoid failure.
         if not nbest:
             nbest.append(
-                _NbestPrediction(text="empty", start_logit=0.0, end_logit=0.0))
+                _NbestPrediction(text="empty", start_logit=0.0, end_logit=0.0,zl_probabilities=zl_probabilities))
 
         assert len(nbest) >= 1
 
@@ -994,6 +1026,7 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
             output["probability"] = probs[i]
             output["start_logit"] = entry.start_logit
             output["end_logit"] = entry.end_logit
+            output["zl_probabilities"] = entry.zl_probabilities
             nbest_json.append(output)
 
         assert len(nbest_json) >= 1
@@ -1011,6 +1044,10 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
                 all_predictions[example.qas_id] = best_non_null_entry.text
 
         all_nbest_json[example.qas_id] = nbest_json
+
+    # with codecs.open('./best.json', 'w', encoding='utf-8') as f:
+    #     json.dump(all_nbest_json, indent=4, ensure_ascii=False)
+    #     f.close()
 
     with tf.gfile.GFile(output_prediction_file, "w") as writer:
         writer.write(json.dumps(all_predictions, indent=4) + "\n")
@@ -1189,12 +1226,10 @@ class FeatureWriter(object):
             features["end_positions"] = create_int_feature(
                 [feature.end_position])
             impossible = 0
-            is_zl = 0
             if feature.is_impossible:
                 impossible = 1
-                is_zl = 1
             features["is_impossible"] = create_int_feature([impossible])
-            features["is_zl"] = create_int_feature([is_zl])
+            features["is_zl"] = create_int_feature([feature.is_zl])
 
         tf_example = tf.train.Example(
             features=tf.train.Features(feature=features))
@@ -1372,11 +1407,15 @@ def main(_):
             unique_id = int(result["unique_ids"])
             start_logits = [float(x) for x in result["start_logits"].flat]
             end_logits = [float(x) for x in result["end_logits"].flat]
+            zl_probabilities = [float(x) for x in result["zl_probabilities"].flat]
             all_results.append(
                 RawResult(
                     unique_id=unique_id,
                     start_logits=start_logits,
-                    end_logits=end_logits))
+                    end_logits=end_logits,
+                    zl_probabilities=zl_probabilities,
+                    ))
+
 
         output_prediction_file = os.path.join(
             FLAGS.output_dir, "predictions.json")
